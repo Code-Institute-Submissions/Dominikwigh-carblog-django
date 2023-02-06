@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from .models import Post
-from .forms import PostForm
+from .forms import PostForm, EditForm
 
-{# Main page with posts #}
+# Main page with posts #}
 class Home(ListView):
     model = Post
     template_name = 'home.html'
@@ -22,5 +22,6 @@ class AddPost(CreateView):
 # Update the post #
 class UpdatePost(UpdateView):
     model = Post
+    form_class = EditForm
     template_name = 'update_post.html'
-    fields = ['title', 'slug', 'body']
+    #fields = ['title', 'slug', 'body']
