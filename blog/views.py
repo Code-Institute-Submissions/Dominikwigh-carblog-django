@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 class Home(ListView):
     model = Post
     template_name = 'home.html'
-    ordering = ['-id']
+    ordering = ['-created_on']
 
 # Shows a post when clicked #}
 class PostDetailView(DetailView):
