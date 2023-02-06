@@ -1,20 +1,26 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from .models import Post
 from .forms import PostForm
 
-# Home view 
+{# Main page with posts #}
 class Home(ListView):
     model = Post
     template_name = 'home.html'
 
-
+# Shows a post when clicked #}
 class PostDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
 
-
+# Add a post #}
 class AddPost(CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_posts.html'
+
+# Update the post #
+class UpdatePost(UpdateView):
+    model = Post
+    template_name = 'update_post.html'
+    fields = ['title', 'slug', 'body']
