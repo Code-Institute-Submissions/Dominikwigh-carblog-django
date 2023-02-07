@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
+{% if user.is_authenticated %}
 <h2>Add A Blog Post</h2>
 <br/>
 <div class="form-group">
@@ -10,6 +10,8 @@
     {{ form.as_p }}
     <button class="btn btn-dark">Post</button>
 </div>
-
+{% else %}
+You cannot make a post if you are not logged in!!
+{% endif %}
 
 {% endblock %}

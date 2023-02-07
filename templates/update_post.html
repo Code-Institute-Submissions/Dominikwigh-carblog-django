@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
+{% if user.is_authenticated %}
 <h2>Edit Blog Post</h2>
 <br/>
 <div class="form-group">
@@ -11,5 +11,7 @@
     <button class="btn btn-dark">Update</button>
 </div>
 
-
+{% else %}
+You cannot update posts if you are not logged in!!
+{% endif %}
 {% endblock %}
