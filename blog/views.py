@@ -30,6 +30,10 @@ class AddCategory(CreateView):
     model = Category
     template_name = 'add_category.html'
 
+def AddCategory(request, cat):
+    category_posts = choices.filter(category=cat)
+    return render(request, 'add_category.html', {'cat': cat, 'category_posts': category_posts})
+
 
 # Update the post #
 class UpdatePost(UpdateView):
