@@ -6,11 +6,11 @@ from datetime import datetime, date
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
-    slug = models.CharField(max_length=255, default='blogpost')
+    slug = models.SlugField(max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    category = models.CharField(max_length=255, default='car')
+    category = models.CharField(max_length=100, default='car')
 
     def __str__(self):
         return self.title + str(self.author)
@@ -18,14 +18,18 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('home')
 
+
 class Category(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
         return reverse('home')
+
+
+
 
     
 

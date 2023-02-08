@@ -26,11 +26,17 @@ class AddPost(CreateView):
 
 
 # Add a category
-class AddCategory(CreateView):
+class AddCategory(ListView):
     model = Category
     template_name = 'add_category.html'
+    context_object_name = 'choices'
 
-
+    def get_queryset(self):
+        content = {
+            'cat': self.kwargs['category'],
+            'posts': Post.object.filter(category_name=self.kwargs
+            ['category']).filter()
+        }
 
 
 # Update the post #
