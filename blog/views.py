@@ -4,16 +4,19 @@ from .models import Post
 from .forms import PostForm, EditForm
 from django.urls import reverse_lazy
 
+
 # Main page with posts #}
 class Home(ListView):
     model = Post
     template_name = 'home.html'
     ordering = ['-created_on']
 
+
 # Shows a post when clicked #}
 class PostDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
+
 
 # Add a post #}
 class AddPost(CreateView):
@@ -21,11 +24,18 @@ class AddPost(CreateView):
     form_class = PostForm
     template_name = 'add_posts.html'
 
+# 
+class AddCategory(CreateView):
+    model = Category
+    template_name = 'add_category.html'
+
+
 # Update the post #
 class UpdatePost(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
+
 
 class DeletePost(DeleteView):
     model = Post
