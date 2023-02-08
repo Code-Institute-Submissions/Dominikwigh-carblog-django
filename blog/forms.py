@@ -2,9 +2,10 @@ from django import forms
 from .models import Post
 
 # select boxes for category
-
 choices = [('Car leasing', 'Car leasing'), ('Driving', 'Driving'), ('Car reviews', 'Car reviews'),]
 
+
+# Post form
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
@@ -17,6 +18,8 @@ class PostForm(forms.ModelForm):
             'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Enter your blog text here!'})
             }
 
+
+# Edit form
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
