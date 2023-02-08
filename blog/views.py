@@ -27,16 +27,16 @@ class AddPost(CreateView):
 
 # Add a category
 class AddCategory(ListView):
-    model = Category
-    template_name = 'add_category.html'
-    context_object_name = 'choices'
+    template_name = 'category.html'
+    
 
     def get_queryset(self):
         content = {
             'cat': self.kwargs['category'],
-            'posts': Post.object.filter(category_name=self.kwargs
+            'posts': Post.objects.filter(category_name=self.kwargs
             ['category']).filter()
         }
+        return content
 
 
 # Update the post #
@@ -44,6 +44,7 @@ class UpdatePost(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
+
 
 # Delete the post
 class DeletePost(DeleteView):
