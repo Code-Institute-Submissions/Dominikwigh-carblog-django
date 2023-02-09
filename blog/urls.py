@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import Home, PostDetailView, AddPost, UpdatePost, DeletePost, AddCategoryView
+from .views import Home, PostDetailView, AddPost, UpdatePost, DeletePost, AddCategory, AddCategoryView
 
 
 # Urls for all pages 

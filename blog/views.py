@@ -12,7 +12,8 @@ class Home(ListView):
     ordering = ['-created_on']
 
 def AddCategoryView(request, cat):
-    return render(request, 'categories.html', {'cat': cat})
+    category_posts = Post.objects.filter(category=cat)
+    return render(request, 'categories.html', {'cat': cat.title(), 'category_posts':category_posts})
 
 
 # Shows a post when clicked #
