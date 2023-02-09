@@ -27,6 +27,12 @@ class PostDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
 
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(PostDetailView, self,).get_context_data(*args, **kwargs)
+        context['cat_menu'] = cat_menu
+        return context
+
 
 # Add a post 
 class AddPost(CreateView):
@@ -34,12 +40,24 @@ class AddPost(CreateView):
     form_class = PostForm
     template_name = 'add_posts.html'
 
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(AddPost, self,).get_context_data(*args, **kwargs)
+        context['cat_menu'] = cat_menu
+        return context
+
 
 # Add a category
 class AddCategory(CreateView):
     model = Category
     template_name = 'category.html'
     fields = '__all__'
+
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(AddCategory, self,).get_context_data(*args, **kwargs)
+        context['cat_menu'] = cat_menu
+        return context
 
 
 # Update the post #
