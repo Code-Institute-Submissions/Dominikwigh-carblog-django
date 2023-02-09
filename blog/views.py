@@ -11,6 +11,12 @@ class Home(ListView):
     template_name = 'home.html'
     ordering = ['-created_on']
 
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(Home, self,).get_context_data(*args, **kwargs)
+        context['cat_menu'] = cat_menu
+        return context
+
 def AddCategoryView(request, cat):
     category_posts = Post.objects.filter(category=cat)
     return render(request, 'categories.html', {'cat': cat.title(), 'category_posts':category_posts})
