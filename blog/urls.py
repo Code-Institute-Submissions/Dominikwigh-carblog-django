@@ -1,6 +1,5 @@
 from django.urls import path
-from .views import Home, PostDetailView, AddPost, UpdatePost, DeletePost, AddCategory
-from . import views
+from .views import Home, PostDetailView, AddPost, UpdatePost, DeletePost 
 
 
 # Urls for all pages 
@@ -11,6 +10,6 @@ urlpatterns = [
     path('add_post/', AddPost.as_view(), name='add_post'),
     path('post/edit/<int:pk>', UpdatePost.as_view(), name='update_post'),
     path('post/<int:pk>/delete', DeletePost.as_view(), name='delete_post'),
-    path('category/<category>/', AddCategory.as_view(), name='category'),
+    #path('category/<category>/', AddCategory, name='category'),
     
 ]

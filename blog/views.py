@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Category
+from .models import Post 
 from .forms import PostForm, EditForm
 from django.urls import reverse_lazy
 
@@ -26,17 +26,7 @@ class AddPost(CreateView):
 
 
 # Add a category
-class AddCategory(ListView):
-    template_name = 'category.html'
-    
 
-    def get_queryset(self):
-        content = {
-            'cat': self.kwargs['category'],
-            'posts': Post.objects.filter(category_name=self.kwargs
-            ['category']).filter()
-        }
-        return content
 
 
 # Update the post #

@@ -1,10 +1,8 @@
 from django import forms
-from .models import Post
-
-# select boxes for category
-choices = [('Car leasing', 'Car leasing'), ('Driving', 'Driving'), ('Car reviews', 'Car reviews'),]
+from .models import Post, Category
 
 
+choices = Category.objects.all().values_list('name', 'name')
 # Post form
 class PostForm(forms.ModelForm):
     class Meta:
