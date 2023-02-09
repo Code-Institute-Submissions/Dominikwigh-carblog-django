@@ -11,6 +11,9 @@ class Home(ListView):
     template_name = 'home.html'
     ordering = ['-created_on']
 
+def AddCategoryView(request, cat):
+    return render(request, 'categories.html', {'cat': cat})
+
 
 # Shows a post when clicked #
 class PostDetailView(DetailView):
