@@ -26,7 +26,10 @@ class AddPost(CreateView):
 
 
 # Add a category
-
+class AddCategory(CreateView):
+    model = Category
+    template_name = 'category.html'
+    fields = '__all__'
 
 
 # Update the post #
