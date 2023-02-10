@@ -2,21 +2,21 @@
 {% block content %}
 
 <!-- delete posts -->
-<br/>
+<br />
 {% if user.is_authenticated %}
-    {% if user.id == post.author.id %}
-            <h2>Delete Blog Post</h2>
-                <br/>
-        <h4>Delete: {{ post.title }}</h4>
-        <div class="form-group">
-            <form method="POST">
-            {% csrf_token %}
-            <br/>
-            <br/>
-            <br/>
-            <button class="btn btn-dark">Delete</button>
-        </div>
-    {% endif %}
+{% if user.id == post.author.id %}
+<h2>Delete Blog Post</h2>
+<br />
+<h4>Delete: {{ post.title }}</h4>
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        <br />
+        <br />
+        <br />
+        <button class="btn btn-dark">Delete</button>
+</div>
+{% endif %}
 {% else %}
 
 You cannot delete posts if you are not logged in!!
