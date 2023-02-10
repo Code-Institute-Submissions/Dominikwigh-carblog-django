@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Category
 from .forms import PostForm, EditForm, ContactForm
 from django.urls import reverse_lazy
+from django.http import HttpResponse
+from django.core.mail import send_mail, BadHeaderError
 
 
 # Main page with posts #}
@@ -90,8 +92,8 @@ def contact(request):
 
             try: 
                 send_mail(subject, message, 'admin@example.com', ['admin@example.com'])
-                except BadHeaderError:
-                    return HttpResponse('Invalid header found')
-                return redirect('home')
+            except BadHeaderError:
+                return HttpResponse('Invalid header found')
+            return redirect('home')
     form = ContactForm()
     return render(request, 'contact.html', {'form': form})
