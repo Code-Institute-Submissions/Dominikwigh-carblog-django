@@ -75,8 +75,7 @@ class DeletePost(DeleteView):
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
 
-# Contact 
-
+# Contact form
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)

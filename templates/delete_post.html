@@ -1,7 +1,6 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
-<!-- delete posts -->
+<!-- Delete posts page -->
 <br />
 {% if user.is_authenticated %}
 {% if user.id == post.author.id %}
