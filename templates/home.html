@@ -1,19 +1,25 @@
-{% extends 'base.html' %}
-{% block content %}
-
-<!-- home page with posts -->
-<h1>Posts</h1>
+{% extends "base.html" %}
+{% block content%}
 <ul>
-{% for post in object_list %}
-    <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - <a href="{% url 'category' post.category%}">{{ post.category}}</a>
-    {{ post.created_on }}
-    {{ post.body }}
-    {% if user.is_authenticated %}
-        {% if user.id == post.author.id %}
-             - <a href="{% url 'update_post' post.pk %}">Edit</a>
-            - <a href="{% url 'delete_post' post.pk %}">Delete</a></li>
-        {% endif %}
-    {% endif %}
-{% endfor%}
+    <div class="col-md-8 offset-md-2">
+        <h1>Blog Posts...</h1>
+        <hr>
+        {% for post in object_list %}
+        <li>
+            <h2><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a></h2>
+            <small>
+                {{ post.created_on }} |&nbsp;
+                Category:&nbsp;
+                {% for post in category_posts %}
+                <a href="{% url 'category' post.category %}">
+                    {{ post.category }}
+                </a>
+                {% endfor%}
+            </small>
+            <br>
+            <p>{{ post.body | slice:":300" }}...</p>
+        </li>
+        {% endfor %}
+    </div>
 </ul>
 {% endblock %}
