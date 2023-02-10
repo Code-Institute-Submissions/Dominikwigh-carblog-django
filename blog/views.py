@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Category
-from .forms import PostForm, EditForm
+from .forms import PostForm, EditForm, ContactForm
 from django.urls import reverse_lazy
 
 
@@ -72,3 +72,26 @@ class DeletePost(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+
+# Contact 
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = 'Blog Inquiry'
+            body = {
+                'first_name': form.cleaned_data['first_name'],
+                'last_name': form.cleaned_data['last_name'],
+                'email_address': form.cleaned_data['email_address'],
+                'message': form.cleaned_data['message'],
+            }
+            message = "\n".join(body.values())
+
+            try: 
+                send_mail(subject, message, 'admin@example.com', ['admin@example.com'])
+                except BadHeaderError:
+                    return HttpResponse('Invalid header found')
+                return redirect('home')
+    form = ContactForm()
+    return render(request, 'contact.html', {'form': form})
