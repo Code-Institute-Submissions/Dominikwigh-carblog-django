@@ -8,7 +8,7 @@ choice_list = []
 
 for item in choices:
     choice_list.append(item)
-# Post form
+# Post page with form
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
@@ -16,13 +16,14 @@ class PostForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your title here!'}),
             'slug': forms.TextInput(attrs={'class': 'form-control'}),
-            'author': forms.Select(attrs={'class': 'form-control'}),
+            'author': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'user', 'type': 'hidden'}),
+            #'author': forms.Select(attrs={'class': 'form-control'}),
             'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Enter your blog text here!'})
             }
 
 
-# Edit form
+# Edit page with form 
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
@@ -34,7 +35,7 @@ class EditForm(forms.ModelForm):
             }
 
 
-# Contact form 
+# Contact page with form
 
 class ContactForm(forms.Form):
     first_name = forms.CharField(max_length=50)

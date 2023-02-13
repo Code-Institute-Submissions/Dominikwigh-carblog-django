@@ -10,6 +10,12 @@
     {{ form.as_p }}
     <button class="btn btn-dark">Post</button>
 </div>
+
+<script>
+    var name = "{{ user.id }}";
+    document.getElementById("user").value 
+        = name;
+</script>
 {% else %}
 You cannot make a post if you are not logged in!!
 {% endif %}
