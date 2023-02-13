@@ -33,6 +33,9 @@ class PostDetailView(DetailView):
         cat_menu = Category.objects.all()
         context = super(PostDetailView, self,).get_context_data(*args, **kwargs)
         context['cat_menu'] = cat_menu
+        get_likes = get_object_or_404(Post, id=self.kwargs['pk'])
+        total_likes = get_likes.total_likes()
+        context['total_likes'] = total_likes
         return context
 
 
@@ -101,4 +104,4 @@ def ContactView(request):
 def LikeView(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
     post.likes.add(request.user)
-    return HttpResponseRedirect(reverse('article_detail', args=[str(pk)]))
+    return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
