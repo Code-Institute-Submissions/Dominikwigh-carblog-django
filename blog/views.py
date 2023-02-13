@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Category
 from .forms import PostForm, EditForm, ContactForm
-from django.urls import reverse_lazy
-from django.http import HttpResponse
+from django.urls import reverse_lazy, reverse
+from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, BadHeaderError
 
 
@@ -76,7 +76,7 @@ class DeletePost(DeleteView):
     success_url = reverse_lazy('home')
 
 # Contact form
-def contact(request):
+def ContactView(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -96,3 +96,9 @@ def contact(request):
             return redirect('home')
     form = ContactForm()
     return render(request, 'contact.html', {'form': form})
+
+    # Like a post 
+def LikeView(request, pk):
+    post = get_object_or_404(Post, id=request.POST.get('post_id'))
+    post.likes.add(request.user)
+    return HttpResponseRedirect(reverse('article_detail', args=[str(pk)]))
