@@ -35,7 +35,11 @@ class PostDetailView(DetailView):
         context['cat_menu'] = cat_menu
         get_likes = get_object_or_404(Post, id=self.kwargs['pk'])
         total_likes = get_likes.total_likes()
+        liked = False
+        if get_likes.likes.filter(id=self.request.user.id).exists():
+            liked = True
         context['total_likes'] = total_likes
+        context['liked'] = liked
         return context
 
 
