@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<!-- Add a comment page -->
+
+{% if user.is_authenticated %}
+<h2>Add A Comment</h2>
+<br/>
+<div class="form-group">
+    <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-dark">Add</button>
+</div>
+
+{% endblock %}
