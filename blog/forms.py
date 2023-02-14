@@ -41,3 +41,13 @@ class ContactForm(forms.Form):
     last_name = forms.CharField(max_length=50)
     email_address = forms.EmailField(max_length=150)
     message = forms.CharField(widget=forms.Textarea, max_length=2000)
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('name', 'body',)
+        widgets = {
+            'Name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Your Name'}),
+            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Leave a comment!'}),
+            }
