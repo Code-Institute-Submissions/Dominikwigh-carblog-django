@@ -6,8 +6,7 @@
 <h1>Category -- {{ cat }} </h1>
 <ul>
 {% for post in category_posts %}
-
-        <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - {{ post.category }}
+        <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - 
         {{ post.created_on }}
         {{ post.body }}
         {% if user.is_authenticated %}

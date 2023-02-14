@@ -11,14 +11,14 @@
                 {{ post.created_on }} |&nbsp;
                 Category:&nbsp;
                 {% for post in category_posts %}
-                <a href="{% url 'category' post.category %}">
-                    {{ post.category }}
-                </a>
+                <a href="{% url 'post-detail' post.pk %}">{{ cat }}</a>
+                </a>&nbsp;
                 {% endfor%}
             </small>
             <br>
             <p>{{ post.body | slice:":300" }}...</p>
         </li>
+        
         {% endfor %}
     </div>
 </ul>
