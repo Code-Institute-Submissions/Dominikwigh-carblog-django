@@ -19,6 +19,8 @@ class Home(ListView):
         context['cat_menu'] = cat_menu
         return context
 
+
+# Add category
 def AddCategoryView(request, cat):
     category_posts = Post.objects.filter(category=cat)
     return render(request, 'categories.html', {'cat': cat.title(), 'category_posts':category_posts})
@@ -43,7 +45,7 @@ class PostDetailView(DetailView):
         return context
 
 
-# Add a post 
+# Add a post
 class AddPost(CreateView):
     model = Post
     form_class = PostForm
@@ -82,6 +84,7 @@ class DeletePost(DeleteView):
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
 
+
 # Contact form
 def ContactView(request):
     if request.method == 'POST':
@@ -104,8 +107,9 @@ def ContactView(request):
     form = ContactForm()
     return render(request, 'contact.html', {'form': form})
 
-    # Like a post 
-    # taken from codemy.com 
+
+# Like a post
+# taken from codemy.com
 def LikeView(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
     liked = False
@@ -123,4 +127,9 @@ class AddComment(CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
+    
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['pk']
+        return super().form_valid(form)
     success_url = reverse_lazy('home')
+
