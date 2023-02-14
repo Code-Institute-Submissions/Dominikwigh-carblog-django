@@ -36,5 +36,18 @@
 {% endif %}
     - {{ total_likes }}
 Likes </form>
-
+<hr>
+<h2>Comments:</h2>
+{% if not post.comments.all %}
+    No Comments Yet..<a href="#">Add one here</a>
+{% else %}
+    {% for comment in post.comments.all %}
+    <strong>
+        On {{comment.created_on.date }}&nbsp;
+        {{ comment.author }} wrote:
+    </strong>
+    <p>{{ comment.body }}</p>
+    <hr>
+    {% endfor%}
+{% endif %}
 {% endblock %}
