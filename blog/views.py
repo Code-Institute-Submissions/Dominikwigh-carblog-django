@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Category, Comment
-from .forms import PostForm, EditForm, ContactForm
+from .forms import PostForm, EditForm, ContactForm, CommentForm
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, BadHeaderError
@@ -121,5 +121,6 @@ def LikeView(request, pk):
 # Add comment
 class AddComment(CreateView):
     model = Comment
+    form_class = CommentForm
     template_name = 'add_comment.html'
-    fields = '__all__'
+    success_url = reverse_lazy('home')
