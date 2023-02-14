@@ -3,15 +3,21 @@
     background-position: top;
     height: auto;
     max-width: 100%;
+    
    
 }
 
 body {
-    font-family: 'Zen Dots', cursive;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 
 }
 
-h2 {
-    font-family: 'Lato', sans-serif;
-    
+a {
+    color: black;
+}
+
+h1 {
+    color:black
 }

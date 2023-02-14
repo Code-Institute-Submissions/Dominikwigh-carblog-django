@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Zen+Dots&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body id='bg' style="background-image: url('{% static 'images/bg.jpeg'%}');">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'home' %}">CarBlog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact CarBlog</a>
             </li>
             {% endif %}
           </ul>
