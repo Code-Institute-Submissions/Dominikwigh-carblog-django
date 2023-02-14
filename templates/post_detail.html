@@ -39,9 +39,9 @@ Likes </form>
 <hr>
 <h2>Comments:</h2>
 {% if not post.comments.all %}
-    No Comments Yet..<a href="#">Add one here</a>
+    No Comments Yet..<a href="{% url 'add_comment' post.pk %}">Add one here</a>
 {% else %}
-<a href="">Add a comment</a>
+<a href="{% url 'add_comment' post.pk %}">Add Comment</a>
 <br />
 <br />
     {% for comment in post.comments.all %}

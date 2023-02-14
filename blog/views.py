@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Category
+from .models import Post, Category, Comment
 from .forms import PostForm, EditForm, ContactForm
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
@@ -116,3 +116,10 @@ def LikeView(request, pk):
         post.likes.add(request.user)
         liked = True
     return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
+
+
+# Add comment
+class AddComment(CreateView):
+    model = Comment
+    template_name = 'add_comment.html'
+    fields = '__all__'
