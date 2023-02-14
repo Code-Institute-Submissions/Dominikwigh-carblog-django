@@ -32,3 +32,14 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('home')
+
+
+# Comment section 
+class Comment(models.Model):
+    author = models.CharField(max_length=200)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title + str(self.author)
