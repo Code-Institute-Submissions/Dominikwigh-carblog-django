@@ -1,23 +1,24 @@
 #bg{ 
     background-repeat: no-repeat;
-    background-position: top;
-    height: auto;
-    max-width: 100%;
+    
+    background-size: cover;
+   
     
    
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
 
 }
 
 a {
-    color: black;
+    color: rgb(0, 0, 0);
+    font-family: 'Zen Dots', cursive;;
 }
 
 h1 {
-    color:black
+    color:rgb(255, 255, 255)
 }
