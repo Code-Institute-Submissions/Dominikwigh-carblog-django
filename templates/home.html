@@ -9,11 +9,7 @@
             <h2><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a></h2>
             <small>
                 {{ post.created_on }} |&nbsp;
-                Category:&nbsp;
-                {% for post in category_posts %}
-                <a href="{% url 'post-detail' post.pk %}">{{ cat }}</a>
-                </a>&nbsp;
-                {% endfor%}
+                By: {{ post.author }} 
             </small>
             <br>
             <p>{{ post.body | slice:":300" }}...</p>
