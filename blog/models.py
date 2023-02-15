@@ -43,3 +43,15 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.author
+
+
+# Profile 
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    bio = models.TextField(blank=True, null=True)
+    facebook = models.CharField(max_length=200, blank=True, null=True)
+    instagram = models.CharField(max_length=200, blank=True, null=True)
+    linkedin = models.CharField(max_length=200, blank=True, null=True)
+    
+    def __str__(self):
+        return str(self.user)
