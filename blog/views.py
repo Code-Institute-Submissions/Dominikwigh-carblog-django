@@ -100,7 +100,7 @@ def ContactView(request):
             message = "\n".join(body.values())
 
             try: 
-                send_mail(subject, message, 'admin@example.com', ['admin@example.com'])
+                send_mail(subject, message, 'dominik-00@live.se', ['dominik-00@live.se'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found')
             return redirect('home')
