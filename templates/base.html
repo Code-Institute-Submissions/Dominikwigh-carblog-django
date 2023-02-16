@@ -27,6 +27,8 @@
           <!-- Nav bar links -->
             {% if user.is_authenticated %}
             <li class="nav-item">
+              <a class="nav-link active" href="#">Hello {{request.user}}</a>
+            <li class="nav-item">
               <a class="nav-link" href="{% url 'add_post' %}">Add Post</a>
             </li>
             <li class="nav-item">
