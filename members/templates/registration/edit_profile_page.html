@@ -2,17 +2,18 @@
 <!-- Edit profile page -->
 
 {% if user.is_authenticated %}
+{% if user.id == profile.user.id %}
 <h2>Edit Profile Page...</h2>
-<br/>
+<br />
 <div class="form-group">
     <form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button class="btn btn-dark">Update</button>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-dark">Update</button>
 </div>
 
 {% else %}
-You cannot make a post if you are not logged in!!
+You cannot edit a page if you are not the correct user!!
 {% endif %}
-
+{% endif %}
 {% endblock %}
