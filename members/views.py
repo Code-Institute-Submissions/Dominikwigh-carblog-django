@@ -3,11 +3,12 @@ from django.views import generic
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.urls import reverse_lazy
 from .forms import EditProfileForm
+from .forms import SignupForm
 
 
 # Registration
 class UserRegisterView(generic.CreateView):
-    form_class = UserCreationForm
+    form_class = SignupForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('home')
 
