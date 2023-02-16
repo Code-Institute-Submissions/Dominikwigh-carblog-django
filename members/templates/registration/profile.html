@@ -1,0 +1,33 @@
+{% extends 'base.html' %} 
+ {% block content %}
+
+
+<div class="card bg-dark text-white">
+    <div class="card-img-overlay">
+      <h5 class="card-title">
+        {{ user.user.first_name }}
+        {{ user.user.last_name }}
+    </h5>
+    <p class="small text-muted">
+        {% if user.facebook %}
+        <a href="{{user.facebook }}">Facebook | </a>
+        {% endif %}
+
+        {% if user.instagram%}
+        <a href="{{user.instagram }}">Instagram | </a>
+        {% endif %}
+
+        {% if user.linkedin%}
+        <a href="{{ user.linkedin }}">linkedIn </a>
+        {% endif %}
+        </p>
+        <p class="card-text">
+        {{ user.bio }}
+    </p>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Back
+    </a>
+    </div>
+  </div>
+
+
+{% endblock %}

@@ -9,7 +9,7 @@
             <h2><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a></h2>
             <small>
                 {{ post.created_on }} |&nbsp;
-                By: {{ post.author }} 
+                By: <a href="{% url 'profile_page' post.author.profile.id %}">{{ post.author }}</a>
             </small>
             <br>
             <p>{{ post.body | slice:":300" }}...</p>

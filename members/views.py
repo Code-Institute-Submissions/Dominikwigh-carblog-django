@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.urls import reverse_lazy
 from .forms import EditProfileForm
 from .forms import SignupForm
-from django.views.generic import DeleteView
+from django.views.generic import DetailView
 from blog.models import Profile
 
 
@@ -31,9 +31,7 @@ class ProfilePageView(DetailView):
     template_name = 'registration/profile.html'
 
     def get_context_data(self, *args, **kwargs):
-        users = Profile.objects.all()
         context = super(ProfilePageView, self,).get_context_data(*args, **kwargs)
-
         user = get_object_or_404(Profile, id=self.kwargs['pk'])
         context['user'] = user
         return context
