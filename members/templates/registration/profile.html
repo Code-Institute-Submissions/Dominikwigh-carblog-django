@@ -8,7 +8,7 @@
         {{ user.user.first_name }}
         {{ user.user.last_name }}
     </h5>
-    <p class="small text-muted">
+    <div class="small text-white">
         {% if user.facebook %}
         <a href="{{user.facebook }}">Facebook<i class="fa-brands fa-facebook"></i></a> | 
         {% endif %}
@@ -20,10 +20,10 @@
         {% if user.linkedin%}
         <a href="{{ user.linkedin }}">linkedIn<i class="fa-brands fa-linkedin"></i></a>
         {% endif %}
-        </p>
+    </div>
         <p class="card-text">
         {{ user.bio }}
-    </p>
+        </p>
     <a href="{% url 'home' %}" class="btn btn-secondary">Back
     </a>
     </div>
