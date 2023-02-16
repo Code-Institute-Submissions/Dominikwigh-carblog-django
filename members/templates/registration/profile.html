@@ -10,15 +10,15 @@
     </h5>
     <p class="small text-muted">
         {% if user.facebook %}
-        <a href="{{user.facebook }}">Facebook | </a>
+        <a href="{{user.facebook }}">Facebook<i class="fa-brands fa-facebook"></i></a> | 
         {% endif %}
 
         {% if user.instagram%}
-        <a href="{{user.instagram }}">Instagram | </a>
+        <a href="{{user.instagram }}">Instagram<i class="fa-brands fa-square-instagram"></i></a> | 
         {% endif %}
 
         {% if user.linkedin%}
-        <a href="{{ user.linkedin }}">linkedIn </a>
+        <a href="{{ user.linkedin }}">linkedIn<i class="fa-brands fa-linkedin"></i></a>
         {% endif %}
         </p>
         <p class="card-text">
