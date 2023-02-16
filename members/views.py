@@ -3,7 +3,7 @@ from django.views import generic
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.urls import reverse_lazy
 from .forms import EditProfileForm
-from .forms import SignupForm
+from .forms import SignupForm, ProfilePageForm
 from django.views.generic import DetailView, CreateView
 from blog.models import Profile
 
@@ -48,8 +48,8 @@ class EditProfilePageView(generic.UpdateView):
 # Create a profile page
 class CreateProfilePageView(CreateView):
     model = Profile
+    form_class = ProfilePageForm
     template_name = 'registration/create_user.html'
-    fields = '__all__'
 
     def form_valid(self, form):
         form.instance.user = self.request.user

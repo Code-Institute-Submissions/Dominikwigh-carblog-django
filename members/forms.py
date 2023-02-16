@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.contrib.auth.models import User 
-from django import forms 
+from django import forms
+from blog.models import Profile
 
 # Edit profile form
 class EditProfileForm(UserChangeForm):
@@ -34,3 +35,18 @@ class SignupForm(UserCreationForm):
         self.fields['username'].widget.attrs['class'] = 'form-control'
         self.fields['password2'].widget.attrs['class'] = 'form-control'
         self.fields['password2'].widget.attrs['class'] = 'form-control'
+
+
+# Profile page creation
+class ProfilePageForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ('bio', 'facebook', 'instagram', 'linkedin')
+        
+        widgets = {
+            'bio': forms.Textarea(attrs={'class': 'form-control'}),
+            'facebook': forms.TextInput(attrs={'class': 'form-control'}),
+            'instagram': forms.TextInput(attrs={'class': 'form-control'}),
+            'linkedin': forms.TextInput(attrs={'class': 'form-control'}),
+                
+        }
