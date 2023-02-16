@@ -12,17 +12,7 @@ class UserRegisterView(generic.CreateView):
 
 
 # Edit profile
-def UserEditView(request):
-    try:
-        profile = request.user.profile
-    except Profile.DoesNotExist:
-        profile = Profile(user=request.user)
-    if request.method == "POST":
-        form = ProfileForm(data=request.POST, files=request.FILES, instance=profile)
-        if form.is_valid():
-            form.save()
-            alert = True
-            return render(request, "edit_profile.html", {'alert': alert})
-    else:
-        form = ProfileForm(instance=profile)
-    return render(request, "edit_profile.html", {'form': form})
+class UserEditView(generic.CreateView):
+    form_class = UserChangeForm
+    template_name = 'registration/edit_profile.html'
+    success_url = reverse_lazy('home')
