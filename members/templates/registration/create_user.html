@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <!-- Create a profile page -->
-
+<div class="text-light bg-dark">
 {% if user.is_authenticated %}
 <h2>Create a Profile Page...</h2>
 <br/>
@@ -8,9 +8,9 @@
     <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <button class="btn btn-dark">Create</button>
+    <button class="btn btn-light">Create</button>
 </div>
-
+</div>
 {% else %}
 You cannot create a profile page if you are not logged in!!
 {% endif %}

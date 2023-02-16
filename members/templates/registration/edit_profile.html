@@ -1,14 +1,15 @@
 {% extends 'base.html' %} {% block content %}
 
+<div class="text-light bg-dark">
 <h2>Edit settings...</h2>
 <br/>
 <div class="form-group">
     <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <button class="btn btn-dark">Update</button>
+    <button class="btn btn-light">Update</button>
 </div>
-
+</div>
 
 
 {% endblock %}

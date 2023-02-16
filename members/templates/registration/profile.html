@@ -2,8 +2,7 @@
  {% block content %}
 
 
-<div class="card bg-dark text-white">
-    <div class="card-img-overlay">
+<div class="card bg-dark text-light">
       <h5 class="card-title">
         {{ user.user.first_name }}
         {{ user.user.last_name }}
@@ -24,10 +23,11 @@
         <p class="card-text">
         {{ user.bio }}
         </p>
-    <a href="{% url 'home' %}" class="btn btn-secondary">Back
+      </div>
+    <a href="{% url 'home' %}" 
+    class="btn btn-light">Back
     </a>
-    </div>
-  </div>
+
 
 
 {% endblock %}
