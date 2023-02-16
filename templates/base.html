@@ -44,8 +44,8 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Profile</a>
-                <a class="dropdown-item" href="{% url 'profile_page'  %}">Show Profile Page</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="{% url 'profile_page' user.profile.id %}">Show Profile Page</a>
+                <a class="dropdown-item" href="{% url 'edit_profile_page' user.profile.id %}">Edit Profile Page</a>
               </div>
             </li>
             {% else %}
