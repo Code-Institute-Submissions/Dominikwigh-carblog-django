@@ -49,6 +49,7 @@ class EditProfilePageView(generic.UpdateView):
 class CreateProfilePageView(CreateView):
     model = Profile
     template_name = 'registration/create_user.html'
+    fields = '__all__'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
