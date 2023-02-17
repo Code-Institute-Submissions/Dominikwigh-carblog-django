@@ -145,4 +145,13 @@ Well, you asked for it!
 Well, you asked for it!
 </details>
 
+## JavaScript Validation 
+[JShint](https://jshint.com/) Was used to validate the JavaScript code used. Thers i a small script used in the templates that has been intentionally placed there due to the small size of the script and being specific to those pages.
+<details open>
+<summary>Want to ruin the surprise?</summary>
+<br>
+Well, you asked for it!
+</details>
+
+## Python Validation
 
