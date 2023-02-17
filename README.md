@@ -64,4 +64,25 @@ Google Fonts was used on deciding on the fonts for the website. "Zen dots with a
 
 ## Site structure
 
-### 
+### Pages
+User experience was one of the main driving factors in this project. A simple, clear and easy to navigate app was the desired outcome. To achieve this there is  a sticky nav bar with links at the top. In the form of a hamburger toggle button if using a small screen device in which all links will be listed vertically.
+
+The website consists of the following sections: 
+#### If not logged in 
+When the user is not logged in they are able to read post on the home page and visit the authors profile page. Posts will be displayed in order by date of most recent.
+* Register, the user can register via a form. 
+* Login, the user can log in.
+* Categories, here the user can select a specific category to read. 
+* Contact page, here the user can contact carblog via a email.  
+* Post page, when a user select a post to read they are not able to like the post nor can they leave a comment.
+#### If logged in 
+When the user is logged in their name will appear in the navbar with a hello message. They are able to read post on the home page, posts will be displayed in order by date of most recent.
+* Add post, the user can create a post. 
+* Add Category, the user can add a category.
+* Logout, the user is able to logout.
+* Drop down Profile, the dropdown menu consist of...
+    * Edit settings where the user can edit their settings, email, password, username and so on. 
+    * Show profile, this page shows the user their profile page. 
+    * Edit Profile page, here the user can edit their bio and social links via a form which will be update upon save.
+* Post page, when a user select a post to read they are able to like or unlike the post and leave a comment.
+
