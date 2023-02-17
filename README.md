@@ -120,3 +120,10 @@ The login is located beside register and is avilable for the user to fill out if
 ### Categories 
 The catgories dropdown menu is located in the navbar and displays different categories. 
 
+# Future implementation
+
+## Future features 
+While using the AGILE design methodology against the time allocated to the project there are a number of features which would be great to implement in the future. These features are: number 13,14,15 in the user stories. 
+
+## Improvments 
+Although alot of effort was put into this project, due to time constraints there is still room for improvments. 
