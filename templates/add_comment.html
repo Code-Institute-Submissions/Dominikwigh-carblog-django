@@ -8,10 +8,12 @@
     <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <button class="btn btn-dark">Add</button>
+    <button class="btn btn-light">Add</button>
 </div>
 {% else %}
-You have to have a account to comment on posts!
+You have to have be logged in to comment on posts! 
+<br />
+<a href="{% url 'login' %}">Click me to log in</a>
 {% endif %}
 </div>
 {% endblock %}
