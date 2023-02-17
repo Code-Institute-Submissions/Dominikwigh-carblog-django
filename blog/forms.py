@@ -8,6 +8,8 @@ choice_list = []
 
 for item in choices:
     choice_list.append(item)
+
+
 # Post page with form
 class PostForm(forms.ModelForm):
     class Meta:
@@ -42,12 +44,13 @@ class ContactForm(forms.Form):
     email_address = forms.EmailField(max_length=150)
     message = forms.CharField(widget=forms.Textarea, max_length=2000)
 
+
 # Comment form
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('author', 'body')
         widgets = {
-            'author': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Your Name'}),
-            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Leave a comment!'}),
+            'author': forms.TextInput(attrs={'class': 'form-control','placeholder': 'Your Name'}),
+            'body': forms.Textarea(attrs={'class': 'form-control','placeholder': 'Leave a comment!'}),
             }

@@ -15,6 +15,6 @@ urlpatterns = [
     path('contact/', views.ContactView, name='contact'),
     path('like/<int:pk>', LikeView, name='like_post'),
     path('post/<int:pk>/comment/', AddComment.as_view(), name='add_comment'),
-    
-    
+
+
 ]

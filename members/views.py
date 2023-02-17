@@ -12,7 +12,7 @@ from blog.models import Profile
 class UserRegisterView(generic.CreateView):
     form_class = SignupForm
     template_name = 'registration/register.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('login')
 
 
 # Edit profile
