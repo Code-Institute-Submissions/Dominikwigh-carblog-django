@@ -47,3 +47,13 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 13. As a site admin, i can create draft posts so that i can finish writing them later.
 14. As a Site user, i can approve or disapprove comments so that i can filter out comments.
 15. As a Site user, i can add a image to my post so that i have a image with my text.
+
+## CRUD Functionality
+* Create - Users can create, account, profile, post, comment, like. 
+* Read - Users can view post that other people have written and also their profile. 
+* Update - Users can update their profile, posted posts and likes. 
+* Delete - Users can delete posts, comments and likes. 
+
+## Colors
+
+The colour scheme used in this project was chosen with simplicity in mind. The colour scheme is used throughout all pages to ensure contrast readability and an overall good user experience.
