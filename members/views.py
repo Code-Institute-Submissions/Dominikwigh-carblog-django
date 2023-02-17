@@ -37,7 +37,7 @@ class ProfilePageView(DetailView):
         return context
 
 
-#Edit profile page 
+# Edit profile page
 class EditProfilePageView(generic.UpdateView):
     model = Profile
     template_name = 'registration/edit_profile_page.html'

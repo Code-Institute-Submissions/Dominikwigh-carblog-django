@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import (ListView, DetailView, CreateView,
+                                  UpdateView, DeleteView)
 from .models import Post, Category, Comment
 from .forms import PostForm, EditForm, ContactForm, CommentForm
 from django.urls import reverse_lazy, reverse
@@ -23,7 +24,8 @@ class Home(ListView):
 # Add category
 def AddCategoryView(request, cat):
     category_posts = Post.objects.filter(category=cat)
-    return render(request, 'categories.html', {'cat': cat.title(), 'category_posts':category_posts})
+    return render(request, 'categories.html', {
+        'cat': cat.title(), 'category_posts': category_posts})
 
 
 # Shows a post when clicked #
@@ -33,7 +35,8 @@ class PostDetailView(DetailView):
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
-        context = super(PostDetailView, self,).get_context_data(*args, **kwargs)
+        context = super(PostDetailView, self,).get_context_data(
+            *args, **kwargs)
         context['cat_menu'] = cat_menu
         get_likes = get_object_or_404(Post, id=self.kwargs['pk'])
         total_likes = get_likes.total_likes()
@@ -99,8 +102,9 @@ def ContactView(request):
             }
             message = "\n".join(body.values())
 
-            try: 
-                send_mail(subject, message, 'dominik-00@live.se', ['dominik-00@live.se'])
+            try:
+                send_mail(subject, message, 'dominik-00@live.se', [
+                    'dominik-00@live.se'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found')
             return redirect('home')
@@ -116,7 +120,7 @@ def LikeView(request, pk):
     if post.likes.filter(id=request.user.id).exists():
         post.likes.remove(request.user)
         liked = False
-    else: 
+    else:
         post.likes.add(request.user)
         liked = True
     return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))

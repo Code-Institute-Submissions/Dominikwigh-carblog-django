@@ -16,15 +16,24 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = ('title', 'slug', 'author', 'category', 'body')
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your title here!'}),
-            'slug': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your slug here!'}),
-            'author': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'user', 'type': 'hidden'}),
-            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Enter your blog text here!'})
+            'title': forms.TextInput(attrs={
+                'class': 'form-control', 'placeholder':
+                'Enter your title here!'}),
+            'slug': forms.TextInput(attrs={
+                'class': 'form-control', 'placeholder':
+                'Enter your slug here!'}),
+            'author': forms.TextInput(attrs={
+                'class': 'form-control', 'value': '', 'id': 'user', 'type':
+                'hidden'}),
+            'category': forms.Select(choices=choice_list, attrs={
+                'class': 'form-control'}),
+            'body': forms.Textarea(attrs={
+                'class': 'form-control', 'placeholder':
+                'Enter your blog text here!'})
             }
 
 
-# Edit page with form 
+# Edit page with form
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
@@ -51,6 +60,8 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('author', 'body')
         widgets = {
-            'author': forms.TextInput(attrs={'class': 'form-control','placeholder': 'Your Name'}),
-            'body': forms.Textarea(attrs={'class': 'form-control','placeholder': 'Leave a comment!'}),
+            'author': forms.TextInput(attrs={
+                'class': 'form-control', 'placeholder': 'Your Name'}),
+            'body': forms.Textarea(attrs={
+                'class': 'form-control', 'placeholder': 'Leave a comment!'}),
             }

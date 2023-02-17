@@ -4,7 +4,7 @@ from django.shortcuts import reverse
 from datetime import datetime, date
 
 
-# Category 
+# Category
 class Category(models.Model):
     name = models.CharField(max_length=200)
 
@@ -15,7 +15,7 @@ class Category(models.Model):
         return reverse('home')
 
 
-# Posts 
+# Posts
 class Post(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255)
@@ -35,20 +35,22 @@ class Post(models.Model):
         return reverse('home')
 
 
-# Comment section 
+# Comment section
 class Comment(models.Model):
     author = models.CharField(max_length=200)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        Post, related_name='comments', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.author
 
 
-# Profile 
+# Profile
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, blank=True, null=True)
     bio = models.TextField(blank=True, null=True)
     facebook = models.CharField(max_length=200, blank=True, null=True)
     instagram = models.CharField(max_length=200, blank=True, null=True)

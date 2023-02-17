@@ -1,5 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
-from django.contrib.auth.models import User 
+from django.contrib.auth.models import User
 from django import forms
 from blog.models import Profile
 
@@ -28,7 +28,8 @@ class SignupForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2') 
+        fields = ('username', 'first_name', 'last_name', 'email', 
+        'password1', 'password2')
 
     def __init__(self, *args, **kwargs):
         super(SignupForm, self).__init__(*args, **kwargs)
