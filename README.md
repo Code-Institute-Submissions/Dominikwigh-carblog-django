@@ -21,3 +21,7 @@ The site provides user authentication and a Full CRUD functionality.
 * To provide a platform where users can add posts and share their thoughts.
 * To provide a enjoyable user experince where users want to come back and read, update and create posts. 
 * To have a contact form where users can give feedback. 
+
+# User Experience
+---- 
+* Carblog is inteded to be a friendly community site where users can create and share their own thoughts on cars with others. Users will also be able to see other peoples posts and interact with them via comments or likes. 
