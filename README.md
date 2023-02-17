@@ -130,9 +130,19 @@ Although alot of effort was put into this project, due to time constraints there
 
 # Valdiation 
 ## HTML Validation 
-[W3C Validation](https://validator.w3.org/) was used to validate the html code used in the project. The method to validate i chose to be by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was the copied and pasted into the validator and tested.
+[W3C Validation](https://validator.w3.org/) was used to validate the html code used in the project. The method to validate i chose to be by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested.
 <details open>
 <summary>Want to ruin the surprise?</summary>
 <br>
 Well, you asked for it!
 </details>
+
+## Css Validation
+[W3C Validation](https://validator.w3.org/) as used to validate the css code used in the project. The method to validate i chose to be by Direct Input. To achieve this i copied all code from the style.css file. This code was then copied and pasted into the validator and tested.
+<details open>
+<summary>Want to ruin the surprise?</summary>
+<br>
+Well, you asked for it!
+</details>
+
+
