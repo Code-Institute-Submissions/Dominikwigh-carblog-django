@@ -84,5 +84,39 @@ When the user is logged in their name will appear in the navbar with a hello mes
     * Edit settings where the user can edit their settings, email, password, username and so on. 
     * Show profile, this page shows the user their profile page. 
     * Edit Profile page, here the user can edit their bio and social links via a form which will be update upon save.
-* Post page, when a user select a post to read they are able to like or unlike the post and leave a comment.
+* Post page, when a user select a post to read they are able to like or unlike the post and leave a comment.If the Post was created by the right user they are able to edit or delete the post. 
+
+## Features 
+
+The website consists of many features across the many pages. 
+
+### Authentication
+Authentication is a feature of the website, users will have to be authenticated to create delete and edit posts. Also if they want to add a category.
+
+### Contact 
+The Contact feature can be found in the navbar and allow both signed in users and not signed in to contact the site admin. 
+
+### Add post
+The add post feature can be found in the navbar when a user is registerd and logged in. And allows the user to make posts to the website. 
+
+### Edit post / delete post 
+The edit and delete post feature can be found when the user is logged in and visits their post. 
+
+### Blog posts
+This feature is the main page with posts with the latest created at the top. This page can be found when clicking the carblog title in the navbar. 
+
+### Like / unlike button
+The Like feature can be found under the post, but is only visible when a user is logged in. Otherwise there is a link to login. 
+
+### Comment section 
+The comment section is only visible when a user is logged in, If there is no comment there will be a link to a page where the user can leave a comment. Otherwise there will be a link to login. 
+
+### Register 
+The register feature is located in the navbar and is a form that the user has to fill out to be registerde.
+
+### Login 
+The login is located beside register and is avilable for the user to fill out if they have registered. 
+
+### Categories 
+The catgories dropdown menu is located in the navbar and displays different categories. 
 
