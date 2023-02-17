@@ -154,4 +154,12 @@ Well, you asked for it!
 </details>
 
 ## Python Validation
+[PEP8](https://pep8ci.herokuapp.com/#) 
+<details open>
+<summary>Want to ruin the surprise?</summary>
+<br>
+Well, you asked for it!
+</details>
 
+## LightHouse Validation
+[PEP8](https://pep8ci.herokuapp.com/#)
