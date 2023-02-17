@@ -30,3 +30,20 @@ An Agile approach to creating this app has been applied. GitHub's projects was u
 
 By using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. Due to time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
 
+## User stories
+
+1. As a site user, i can add blog posts so that i can interact with others. 
+2. As a site user, i can create posts so that i can interact with other people. 
+3. As a site user, i can edit my blog post so that i can update the post in the future.
+4. As a site user, i can delete my posts so that i don't have my posts displaying forever.
+5. As a site user, i can register an account so that i can like posts.
+6. As a site user/admin, i can add categories so that the blog posts are separated in their own category.
+7. As a site user, i can contact the site admin so that i can communicate via email.
+8. As a site user, i can like or unlike a post so that i can interact with the content.
+9. As a site user, i can leave comments on posts so that i can be involved in the conversation.
+10. As a site user, i can Create, read, update and delete posts so that i can manage my content.
+11. As a site user, i can have my own profile page so that i can provide my information.
+12. As a site user, i can edit my settings so that i can update my information in the future.
+13. As a site admin, i can create draft posts so that i can finish writing them later.
+14. As a Site user, i can approve or disapprove comments so that i can filter out comments.
+15. As a Site user, i can add a image to my post so that i have a image with my text.
