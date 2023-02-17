@@ -3,7 +3,7 @@
 
 <!-- Page with posts-->
 {% block content %}
-
+<div class="text-light bg-dark">
 <h1>{{ post.title }}</h1>
 <small>By: <a href="{% url 'profile_page' post.author.profile.id %}">{{ post.author }}</a> - {{ post.created_on }}
     {% if user.is_authenticated %}
@@ -19,7 +19,7 @@
 <br />
 <br />
 
-<a href="{% url 'home' %}" class="btn btn-secondary">Back
+<a href="{% url 'home' %}" class="btn btn-light">Back
 </a>
 <br />
 <br/>
@@ -53,5 +53,6 @@ Likes </form>
     <p>{{ comment.body }}</p>
     <hr>
     {% endfor%}
+</div>
 {% endif %}
 {% endblock %}

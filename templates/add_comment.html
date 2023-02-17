@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <!-- Add a comment page -->
+<div class="text-light bg-dark">
 {% if user.is_authenticated %}
 <h2>Add A Comment</h2>
 <br/>
@@ -12,4 +13,5 @@
 {% else %}
 You have to have a account to comment on posts!
 {% endif %}
+</div>
 {% endblock %}

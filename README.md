@@ -131,7 +131,7 @@ Although alot of effort was put into this project, due to time constraints there
 # Valdiation 
 ## HTML Validation 
 [W3C Validation](https://validator.w3.org/) was used to validate the html code used in the project. The method to validate i chose to be by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested.
-<details open>
+<details>
 <summary>Want to ruin the surprise?</summary>
 <br>
 Well, you asked for it!
@@ -147,7 +147,7 @@ Well, you asked for it!
 
 ## JavaScript Validation 
 [JShint](https://jshint.com/) Was used to validate the JavaScript code used. Thers i a small script used in the templates that has been intentionally placed there due to the small size of the script and being specific to those pages.
-<details open>
+<details>
 <summary>Want to ruin the surprise?</summary>
 <br>
 Well, you asked for it!
@@ -155,11 +155,17 @@ Well, you asked for it!
 
 ## Python Validation
 [PEP8](https://pep8ci.herokuapp.com/#) 
-<details open>
+<details>
 <summary>Want to ruin the surprise?</summary>
 <br>
 Well, you asked for it!
 </details>
 
 ## LightHouse Validation
-[PEP8](https://pep8ci.herokuapp.com/#)
+[PEP8](https://pep8ci.herokuapp.com/#) was used to validate the performance of the app. 
+<details>
+<summary>Want to ruin the surprise?</summary>
+<br>
+Well, you asked for it!
+</details>
+

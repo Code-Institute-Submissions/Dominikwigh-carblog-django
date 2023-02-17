@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <!-- Edit post-->
+<div class="text-light bg-dark">
 {% if user.is_authenticated %}
 {% if user.id == post.author.id %}
         <h2>Edit Blog Post</h2>
@@ -9,12 +10,12 @@
             <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-    <button class="btn btn-dark">Update</button>
+    <button class="btn btn-light">Update</button>
     </div>
     {% else %}
     This is not your post
 {% endif %}
-
+</div>
 {% else %}
 
 You cannot update posts if you are not logged in!!
