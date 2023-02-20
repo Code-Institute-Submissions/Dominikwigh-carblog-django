@@ -108,8 +108,8 @@ def ContactView(request):
                     'dominik-00@live.se'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found')
-                messages.success(request, "Message sent.")
-            return redirect('home')
+            messages.success(request, "Message sent.")
+            return redirect('contact')
             messages.error(request, "Error. Message not sent.")
     form = ContactForm()
     return render(request, 'contact.html', {'form': form})

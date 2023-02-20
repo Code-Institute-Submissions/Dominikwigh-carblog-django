@@ -1,6 +1,8 @@
 {% extends 'base.html' %} {% block content %}
-
 <!--Contact form-->
+<hr>
+<hr>
+{% include 'messages.html' %}
 	<div style="margin:20px" class="text-light bg-dark">
 		<h1>Contact</h1>
 		<h4>Contact us directly if you have any questions</h4>
@@ -13,5 +15,6 @@
             {{form.as_p}}
             <button type="submit" class="btn btn-light">Submit</button>
         </form>
+		
     </div>
 {% endblock %}
