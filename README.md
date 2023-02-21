@@ -35,7 +35,7 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 1. As a site user, i can add blog posts so that i can interact with others.  
 3. As a site user, i can edit my blog post so that i can update the post in the future.
 4. As a site user, i can delete my posts so that i can remove it from the site.
-5. As a site user, i can register an account so that i can like posts.
+5. As a site user i can register an account so that i can interact with blog posts.
 6. As a site user/admin, i can add categories so that the blog posts are separated in their own category.
 7. As a site user, i can contact the site admin so that i can communicate via email.
 8. As a site user, i can like or unlike a post so that i can interact with the content.
@@ -215,3 +215,19 @@ Implementation of tests:
 * Give blog posts owners a method to delete posts.
 
 ## All Tests Passed &check;
+--- 
+User Story:
+> 5.As a site user i can register an account so that i can interact with blog posts.
+
+Acceptance criteria:
+* Given that i am a new user i can register for a account, through clicking on register in the navbar. 
+* When i fill out the form i have registered and i am redirected to the log in page. 
+* Through being a registered user i can comment on posts and like posts. 
+
+Implementation of tests:
+* Provide a simple and clear registration form linked in the navbar. 
+* Provide a authentication to comment on posts and like a post. 
+* After a registration user have to log in. 
+
+## All Tests Passed &check;
+
