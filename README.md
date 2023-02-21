@@ -36,7 +36,7 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 3. As a site user, i can edit my blog post so that i can update the post in the future.
 4. As a site user, i can delete my posts so that i can remove it from the site.
 5. As a site user i can register an account so that i can interact with blog posts.
-6. As a site user/admin, i can add categories so that the blog posts are separated in their own category.
+6. As a site user, i can add categories so that the blog posts are separated in their own category.
 7. As a site user, i can contact the site admin so that i can communicate via email.
 8. As a site user, i can like or unlike a post so that i can interact with the content.
 9. As a site user, i can leave comments on posts so that i can be involved in the conversation.
@@ -217,7 +217,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 --- 
 User Story:
-> 5.As a site user i can register an account so that i can interact with blog posts.
+> 5. As a site user i can register an account so that i can interact with blog posts.
 
 Acceptance criteria:
 * Given that i am a new user i can register for a account, through clicking on register in the navbar. 
@@ -225,7 +225,8 @@ Acceptance criteria:
 * Given that a user is not registered they can not comment and like on posts. 
 
 Implementation of tests:
-* Provide a simple and clear registration form linked in the navbar. 
+* Provide a simple and clear registration form linked in the navbar.
+* Redirection to log in page when registration form is completed. 
 * Provide a authentication to comment on posts and like a post. 
 * Restrict the ability to interact with content.
 * Redirect users who make a request for a fnctionality that requires them to be authenticated. 
@@ -233,6 +234,15 @@ Implementation of tests:
 ## All Tests Passed &check;
 --- 
 User story:
-> As a site user/admin, i can add categories so that the blog posts are separated in their own category.
+> 6. As a site user, i can add categories so that the blog posts are separated in their own category.
 
 Acceptance criteria:
+* Given that i am a registered and logged in user i can add blog categories and it only shows up for me when i am logged in. 
+* Given that i dont have a account i dont have se the option to create a new category. 
+
+Implementation of tests:
+* Check for easy access in navbar to add a new category.
+* Easy to create category and when created shown in categorys dropdown menu. 
+
+## All Tests Passed &check;
+
