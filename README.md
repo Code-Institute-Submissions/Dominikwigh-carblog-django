@@ -254,7 +254,23 @@ Acceptance criteria:
 * When Form is filled out The owner of the site gets an email with my message. 
 
 Implementation of tests:
-* When form is submitted email is then checked for a message.
+* When form is submitted, email is then checked for a message.
+
+## All Tests Passed &check;
+---
+User Story:
+> 8. As a site user, i can like or unlike a post so that i can interact with the content.
+
+Acceptance criteria: 
+* Given that i am logged in i can leave a like a post. 
+* Given that i dont have a account i cant like a post. 
+* I can Unlike post after i have liked it. 
+
+Implementation of tests:
+* When opening a post to view the whole post i can then read the post and like button is shown beneath the text. Originillay blue after clicked it turns blue.
+* After a like has been given the counter increases. Or decreses if unliked. 
+* Given that i dont have a account i cannot see Like button or count. 
+* A link is displayd instead with a link to registration page. 
 
 ## All Tests Passed &check;
 
