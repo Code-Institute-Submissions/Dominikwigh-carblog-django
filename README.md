@@ -222,12 +222,17 @@ User Story:
 Acceptance criteria:
 * Given that i am a new user i can register for a account, through clicking on register in the navbar. 
 * When i fill out the form i have registered and i am redirected to the log in page. 
-* Through being a registered user i can comment on posts and like posts. 
+* Given that a user is not registered they can not comment and like on posts. 
 
 Implementation of tests:
 * Provide a simple and clear registration form linked in the navbar. 
 * Provide a authentication to comment on posts and like a post. 
-* After a registration user have to log in. 
+* Restrict the ability to interact with content.
+* Redirect users who make a request for a fnctionality that requires them to be authenticated. 
 
 ## All Tests Passed &check;
+--- 
+User story:
+> As a site user/admin, i can add categories so that the blog posts are separated in their own category.
 
+Acceptance criteria:
