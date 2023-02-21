@@ -11,6 +11,8 @@
             {% csrf_token %}
             {{ form.as_p }}
     <button class="btn btn-light">Update</button>
+    <a href="{% url 'home' %}" class="btn btn-light">Head to main page
+</a>
     </div>
     {% else %}
     This is not your post
