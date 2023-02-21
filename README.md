@@ -34,7 +34,7 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 
 1. As a site user, i can add blog posts so that i can interact with others.  
 3. As a site user, i can edit my blog post so that i can update the post in the future.
-4. As a site user, i can delete my posts so that i don't have my posts displaying forever.
+4. As a site user, i can delete my posts so that i can remove it from the site.
 5. As a site user, i can register an account so that i can like posts.
 6. As a site user/admin, i can add categories so that the blog posts are separated in their own category.
 7. As a site user, i can contact the site admin so that i can communicate via email.
@@ -191,7 +191,7 @@ User Story:
 
 Acceptance criteria:
 * Given that i have logged in as a correct user of a post, i can navigate to the full post when clicking on the post title. Then i have the option to Edit the post. 
-* Given that i have logged in as a different and i navigate to someone else's post then i don't get the edit option. 
+* Given that i have logged in as a different user and i navigate to someone else's post then i don't get the edit option. 
 
 Implementation of tests:
 * Provide a easy way of editing posts. 
@@ -199,4 +199,19 @@ Implementation of tests:
 * Give blog posts owners a method to edit posts.
 
 ## All Tests Passed &check;
+----
+User Story: 
+> 4. As a site user, i can delete my posts so that i can remove it from the site.
 
+Acceptance criteria:
+* Given that i have logged in as a correct user of a post, i can navigate to the full post when clicking on the post title. Then i have the option to delete the post.
+* Given that i have logged in as a different user and i navigate to someone else's post then i don't get the delete option.
+* Given that i have logged in as a correct user of a post and clicks on delete i recive a confirmation window to confirm that i want to delete the post. 
+
+Implementation of tests:
+* Provide post owners with the option to delete their blog posts. 
+* Provide post owners with a confirmation window to prevent mistakes.
+* Prevent unauthorised access to post deletion functionallity.
+* Give blog posts owners a method to delete posts.
+
+## All Tests Passed &check;
