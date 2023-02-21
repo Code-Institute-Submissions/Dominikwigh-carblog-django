@@ -245,4 +245,17 @@ Implementation of tests:
 * Easy to create category and when created shown in categorys dropdown menu. 
 
 ## All Tests Passed &check;
+--- 
+User Story:
+> 7. As a site user, i can contact the site admin so that i can communicate via email.
+
+Acceptance criteria: 
+* When visiting the blog i can see a contact section in the navbar where when clicked gives a form to fill out. 
+* When Form is filled out The owner of the site gets an email with my message. 
+
+Implementation of tests:
+* When form is submitted email is then checked for a message.
+
+## All Tests Passed &check;
+
 
