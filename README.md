@@ -128,7 +128,7 @@ While using the AGILE design methodology against the time allocated to the proje
 ## Improvments 
 Although alot of effort was put into this project, due to time constraints there is still room for improvments. 
 
-# Valdiation 
+# Valdiation Testing
 ## HTML Validation 
 [W3C Validation](https://validator.w3.org/) was used to validate the html code used in the project. The method to validate i chose to be by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested.
 <details>
@@ -168,4 +168,20 @@ Well, you asked for it!
 <br>
 Well, you asked for it!
 </details>
+<br>
 
+# Manual Testing 
+
+## Testing User Stories
+
+>1. As a site user, i can add blog posts so that i can interact with others.
+
+Acceptance criteria:
+* Given that i am a logge in user when i navigate to 'Add Post' in the navbar i have the option to create a blog post. 
+* Given that i have created a blog post as a logged in user, then its available to other users to view. 
+
+Implementation of tests: 
+* Give authenticated users a clear option to create a blog post. 
+* Make made posts available to other visitors to view. 
+
+## All Tests Passed &check;
