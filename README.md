@@ -32,8 +32,7 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 
 ## User stories
 
-1. As a site user, i can add blog posts so that i can interact with others. 
-2. As a site user, i can create posts so that i can interact with other people. 
+1. As a site user, i can add blog posts so that i can interact with others.  
 3. As a site user, i can edit my blog post so that i can update the post in the future.
 4. As a site user, i can delete my posts so that i don't have my posts displaying forever.
 5. As a site user, i can register an account so that i can like posts.
@@ -174,6 +173,7 @@ Well, you asked for it!
 
 ## Testing User Stories
 
+User Story:
 >1. As a site user, i can add blog posts so that i can interact with others.
 
 Acceptance criteria:
@@ -185,3 +185,18 @@ Implementation of tests:
 * Make made posts available to other visitors to view. 
 
 ## All Tests Passed &check;
+----
+User Story:
+> 3. As a site user, i can edit my blog post so that i can update the post in the future.
+
+Acceptance criteria:
+* Given that i have logged in as a correct user of a post, i can navigate to the full post when clicking on the post title. Then i have the option to Edit the post. 
+* Given that i have logged in as a different and i navigate to someone else's post then i don't get the edit option. 
+
+Implementation of tests:
+* Provide a easy way of editing posts. 
+* Prevent other users from editing other peoples posts.
+* Give blog posts owners a method to edit posts.
+
+## All Tests Passed &check;
+
