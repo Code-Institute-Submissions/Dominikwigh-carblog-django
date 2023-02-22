@@ -290,3 +290,20 @@ Implementation of tests:
 * Provide users with a comment section to start a dialogue. 
 
 ## All Tests Passed &check;
+--- 
+User Story: 
+> 9. As a site user, i can Create, read, update and delete posts so that i can manage my content.
+
+Acceptance criteria:
+* Given that i am a unregistered user, when i am at the homepage i see the option to register. 
+* Given that i am a registerd user i can add a post, update a post, open a post and delete a post. 
+* When i add a post its then seen on the main page. 
+* When i click on the post i can read the whole text. 
+* When post is open i can both edit and delete the post thorugh buttons at the top. 
+
+
+Implementation of tests:
+* Check for clear accessible call to action, and that it works as expected.
+* Easy display of functions. 
+
+## All Tests Passed &check;
