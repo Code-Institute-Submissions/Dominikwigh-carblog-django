@@ -33,19 +33,22 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 ## User stories
 
 1. As a site user, i can add blog posts so that i can interact with others.  
-3. As a site user, i can edit my blog post so that i can update the post in the future.
-4. As a site user, i can delete my posts so that i can remove it from the site.
-5. As a site user i can register an account so that i can interact with blog posts.
-6. As a site user, i can add categories so that the blog posts are separated in their own category.
-7. As a site user, i can contact the site admin so that i can communicate via email.
-8. As a site user, i can like or unlike a post so that i can interact with the content.
-9. As a site user, i can leave comments on posts so that i can be involved in the conversation.
-10. As a site user, i can Create, read, update and delete posts so that i can manage my content.
-11. As a site user, i can have my own profile page so that i can provide my information.
-12. As a site user, i can edit my settings so that i can update my information in the future.
-13. As a site admin, i can create draft posts so that i can finish writing them later.
-14. As a Site user, i can approve or disapprove comments so that i can filter out comments.
-15. As a Site user, i can add a image to my post so that i have a image with my text.
+2. As a site user, i can edit my blog post so that i can update the post in the future.
+3. As a site user, i can delete my posts so that i can remove it from the site.
+4. As a site user i can register an account so that i can interact with blog posts.
+5. As a site user, i can add categories so that the blog posts are separated in their own category.
+6. As a site user, i can contact the site admin so that i can communicate via email.
+7. As a site user, i can like or unlike a post so that i can interact with the content.
+8. As a site user, i can leave comments on posts so that i can be involved in the conversation.
+9. As a site user, i can Create, read, update and delete posts so that i can manage my content.
+10. As a site user, i can have my own profile page so that i can provide my information.
+11. As a site user, i can edit my settings so that i can update my information in the future.
+12. As a site admin, i can create draft posts so that i can finish writing them later.
+13. As a Site user, i can approve or disapprove comments so that i can filter out comments.
+14. As a Site user, i can add a image to my post so that i have a image with my text.
+15. As a site user i can delete my account so that users wishing to close can do that.
+16. As a site user i can reply to a comment so that i can respond.
+17. As a site user i can search for a post so that i can quickly find a post that i am looking.
 
 # Design
 
@@ -187,7 +190,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 ----
 User Story:
-> 3. As a site user, i can edit my blog post so that i can update the post in the future.
+> 2. As a site user, i can edit my blog post so that i can update the post in the future.
 
 Acceptance criteria:
 * Given that i have logged in as a correct user of a post, i can navigate to the full post when clicking on the post title. Then i have the option to Edit the post. 
@@ -201,7 +204,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 ----
 User Story: 
-> 4. As a site user, i can delete my posts so that i can remove it from the site.
+> 3. As a site user, i can delete my posts so that i can remove it from the site.
 
 Acceptance criteria:
 * Given that i have logged in as a correct user of a post, i can navigate to the full post when clicking on the post title. Then i have the option to delete the post.
@@ -217,7 +220,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 --- 
 User Story:
-> 5. As a site user i can register an account so that i can interact with blog posts.
+> 4. As a site user i can register an account so that i can interact with blog posts.
 
 Acceptance criteria:
 * Given that i am a new user i can register for a account, through clicking on register in the navbar. 
@@ -234,7 +237,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 --- 
 User story:
-> 6. As a site user, i can add categories so that the blog posts are separated in their own category.
+> 5. As a site user, i can add categories so that the blog posts are separated in their own category.
 
 Acceptance criteria:
 * Given that i am a registered and logged in user i can add blog categories and it only shows up for me when i am logged in. 
@@ -247,7 +250,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 --- 
 User Story:
-> 7. As a site user, i can contact the site admin so that i can communicate via email.
+> 6. As a site user, i can contact the site admin so that i can communicate via email.
 
 Acceptance criteria: 
 * When visiting the blog i can see a contact section in the navbar where when clicked gives a form to fill out. 
@@ -259,7 +262,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 ---
 User Story:
-> 8. As a site user, i can like or unlike a post so that i can interact with the content.
+> 7. As a site user, i can like or unlike a post so that i can interact with the content.
 
 Acceptance criteria: 
 * Given that i am logged in i can leave a like a post. 
