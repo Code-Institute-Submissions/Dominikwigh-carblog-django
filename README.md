@@ -307,3 +307,19 @@ Implementation of tests:
 * Easy display of functions. 
 
 ## All Tests Passed &check;
+---
+User Story:
+> 10. As a site user, i can have my own profile page so that i can provide my information.
+
+Acceptance criteria:
+* Given that i am a unregistered user, when i am on the home page. Then i see a Register link in the navbar. When link is clicked it takes me to the register page where i have to fill out form to register. 
+* Given that i am a unregistered user, When i fill out the form the system creates me a account and i am redirected to the login page where i have to log in. 
+* Given that iam user i am able see a profile dropdown menu in the navbar, when clicked i can edit my settings and create a profile page. 
+* When profile the page is created a link is added to the dropdown menu for me to view my profile.  
+
+Implementation of tests:
+* Check for clear accessible call to action, and that it works as expected.
+* Clear accessible link to create profile and view it. 
+* Easy process creating a profile. 
+
+## All Tests Passed &check;
