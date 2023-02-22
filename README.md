@@ -323,3 +323,17 @@ Implementation of tests:
 * Easy process creating a profile. 
 
 ## All Tests Passed &check;
+--- 
+User Story:
+> 11. As a site user, i can edit my settings so that i can update my information in the future.
+
+Acceptance criteria:
+* Given that i am logged in and click on the profile dropdown menu and then click on edit settings, i should be able to view my settings and edit them. 
+* Given that i am not a logged in user i am not able to see the profile dropdown menu. 
+* Given that i am not logged in to my account and type in the address to edit my settings i am not able to edit anything. 
+
+Implementation of tests:
+* Provide a clear accessebility to view settings and change them if wanted. 
+* Provide a clear and easy to fill out form for the user to update their information. 
+
+## All Tests Passed &check;
