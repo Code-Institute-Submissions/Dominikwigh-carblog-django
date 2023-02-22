@@ -276,5 +276,17 @@ Implementation of tests:
 * A link is displayd instead with a link to registration page. 
 
 ## All Tests Passed &check;
+--- 
+User Story: 
+> 8. As a site user, i can leave comments on posts so that i can be involved in the conversation.
 
+Acceptance criteria:
+* Given that i am a registered user of the website when i navigate to comments section i am able to leave a comment. 
+* Given that i am a registered user i can click on 'leave a comment' and it send me to a comment form to submit. 
 
+Implementation of tests:
+* Provide easy access to comment section. 
+* Provide users the ability to comment on a post.
+* Provide users with a comment section to start a dialogue. 
+
+## All Tests Passed &check;
