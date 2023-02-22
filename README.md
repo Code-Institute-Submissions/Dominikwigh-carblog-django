@@ -49,6 +49,7 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 15. As a site user i can delete my account so that users wishing to close can do that.
 16. As a site user i can reply to a comment so that i can respond.
 17. As a site user i can search for a post so that i can quickly find a post that i am looking.
+18. As a site user i can log in or out of my account so that i can kepp my account secure
 
 # Design
 
@@ -335,5 +336,19 @@ Acceptance criteria:
 Implementation of tests:
 * Provide a clear accessebility to view settings and change them if wanted. 
 * Provide a clear and easy to fill out form for the user to update their information. 
+
+## All Tests Passed &check;
+--- 
+User Story: 
+> 18. As a site user i can log in or out of my account so that i can kepp my account secure. 
+
+Acceptance criteria:
+* Given that i am a registered user, when i navigate to the log in link in the navbar and fill out my credentials correctly and press log in, then i am logged in to my account. 
+* Given that i am a registered user, when i navigate to the log out link in the navbar and and press log out, then i am logged out from my account.
+* Given that i am registered user but signed out and navigate to a blog post i cannot access functions that requires to be logged in. 
+
+Implementation of tests:
+* Provide login and logout functionality. 
+* Secure restricted pages from access when a user is not logged in.
 
 ## All Tests Passed &check;
