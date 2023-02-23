@@ -43,14 +43,13 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 9. As a site user, i can Create, read, update and delete posts so that i can manage my content.
 10. As a site user, i can have my own profile page so that i can provide my information.
 11. As a site user, i can edit my settings so that i can update my information in the future.
-12. As a site admin, i can create draft posts so that i can finish writing them later.
+12. As a site user i can log in or out of my account so that i can kepp my account secure.
 13. As a Site user, i can approve or disapprove comments so that i can filter out comments.
 14. As a Site user, i can add a image to my post so that i have a image with my text.
 15. As a site user i can delete my account so that users wishing to close can do that.
 16. As a site user i can reply to a comment so that i can respond.
 17. As a site user i can search for a post so that i can quickly find a post that i am looking.
-18. As a site user i can log in or out of my account so that i can kepp my account secure
-
+18. As a site admin, i can create draft posts so that i can finish writing them later.
 # Design
 
 ## CRUD Functionality
@@ -340,7 +339,7 @@ Implementation of tests:
 ## All Tests Passed &check;
 --- 
 User Story: 
-> 18. As a site user i can log in or out of my account so that i can kepp my account secure. 
+> 12. As a site user i can log in or out of my account so that i can kepp my account secure. 
 
 Acceptance criteria:
 * Given that i am a registered user, when i navigate to the log in link in the navbar and fill out my credentials correctly and press log in, then i am logged in to my account. 
@@ -352,3 +351,31 @@ Implementation of tests:
 * Secure restricted pages from access when a user is not logged in.
 
 ## All Tests Passed &check;
+--- 
+## Technologies 
+-- 
+* Python / Django 
+    * Django was used as the main python framework. 
+* Heroku 
+    * Heroku was used as the cloud based platform to deploy the site on.
+* Heroku PostgreSQL
+    * Heroku PostgresSQL was used at the databse.
+* JavaScript
+    * JavaScript was 
+* Bootstrap 4.6
+    * Bootstrap was used for layout. 
+* Font Awesome
+    * Font Awesome was used for icons on the site. 
+* CSS
+    * Custom CSS was written for some ares and used to escpae some bootstrap look.
+* HTML
+    * HTML was used as the base programminglanguage for the templates. 
+* GitHub 
+    * GitHub was used to store the files for this project
+* Gitpod
+    * Gitpod was used to develop the website. 
+
+### Resources Used 
+* The Code Institute refernce material was used as a general refernce for things i had previously done during the course. 
+* All Other resources used are acknoleged where appropriate.
+--- 
