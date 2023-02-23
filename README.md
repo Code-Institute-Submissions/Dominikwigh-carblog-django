@@ -352,7 +352,7 @@ Implementation of tests:
 
 ## All Tests Passed &check;
 --- 
-## Technologies 
+# Technologies 
 -- 
 * Python / Django 
     * Django was used as the main python framework. 
@@ -375,7 +375,36 @@ Implementation of tests:
 * Gitpod
     * Gitpod was used to develop the website. 
 
-### Resources Used 
+## Resources Used 
 * The Code Institute refernce material was used as a general refernce for things i had previously done during the course. 
 * All Other resources used are acknoleged where appropriate.
 --- 
+# Deployment 
+The steps to deploy are as follows..
+
+* Go to Heroku and at the top click on the "new" button to create a new app.
+* Enter a unique name and choose Europe as region and click create app.
+* Go to settings and select "Config vars".
+* Add a new "Config vars":
+    * DATABSE_URL: ELEPHANTSQL postgres databse url, obtained below!
+    * PORT: 8000
+    * SECRET_KEY: Your secret key
+* Exit the settings and click Deploy and click Github from the deploy options.
+* Select your repository and connect it to Heroku.
+* Click enable automatic deploy.
+* Wait for the app to build and then click on the "View" link which will redirect you to the deployed link.
+* The live version of the app can be found here..
+
+### ElephantSQL 
+* The app also uses ElephantSQL to host the database. 
+
+The steps to use ElephantSQl are as follows..
+* Log in to ElephantSQL or create an account for free. 
+* Click on cretae a new instance
+* Set up your plan, give the 'plan' the desired name, select Tiny Turtle(free) plan and leave tags blank. 
+* Select the region, and select the nearest tou your location. 
+* Click review, and if everything is ok, click on create instance down at the bottom. 
+* From the instances section lcik on instance with the name that was just created. 
+* Get the databse URL from the instance deatils page and copy, this will be inserted in the Heroku Config vars. 
+
+# Credits
