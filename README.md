@@ -408,3 +408,15 @@ The steps to use ElephantSQl are as follows..
 * Get the databse URL from the instance deatils page and copy, this will be inserted in the Heroku Config vars. 
 
 # Credits
+Code from external sources were used as a basis and built on top of in this project, They are credited below:
+* The website has been built following [Codemy](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi).
+* The code for the contact form with email backend was taken from [Email backend](https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend).
+* Code Institute "I think before i blog" have been used as insperation. 
+* To deploy the site i have been using the videos in the "I think before i blog" part of the course.  
+* Social media icons were sourced from [Font awesome](https://www.google.com).
+* [W3Schools](https://www.google.com) used to research differnet syntaxes.
+* Favicons used in this project came from [Icons8](https://icons8.com/icons/set/favicon-car) 
+* The background image comes from [Pexels](https://www.pexels.com/sv-se/sok/car/)
+[Am i Responsive](https://www.google.com) was used to check for responsivness.
+* Github template used in this project come from [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template)
+* Fonts were taken from [Google fonts](https://fonts.google.com/)
