@@ -1,5 +1,6 @@
 # Carblog 
 
+Developer: Dominik Wigh
 ## Description 
 
 This is the fourth project for the Code Institute Diploma in Software Development.
@@ -8,24 +9,25 @@ CarBlog is a webiste built in Django using Python, JavaScript, CSS/Bootstrap and
 It enables users to create and share blog posts with people around the world. It is targeted towards people who like cars and want to have a read about them, and share their thoughts. Users have the ability to create posts, categorys and their own profile. They can link their personal accounts in their profile. The profile is also editable.  They also can like posts and leave a comment. If wanted the user can contact Carblog via email.
 The site provides user authentication and a Full CRUD functionality.
 
-# Project Goals
-
-## User Goals 
+## Project Goals
+---
+### User Goals 
 * To be able to create blog posts. 
 * To be able to Comment and like on posts. 
 * To be able to have a profile page. 
 * To be able to have CRUD functionality whilst being logged in. 
 
-## Site Owner Goals
+### Site Owner Goals
 * To provide a platform where users can add posts and share their thoughts.
 * To provide a enjoyable user experince where users want to come back and read, update and create posts. 
 * To have a contact form where users can give feedback. 
 
-# User Experience
-
+## User Experience
+---
 * Carblog is inteded to be a friendly community site where users can create and share their own thoughts on cars with others. Users will also be able to see other peoples posts and interact with them via comments or likes. 
 
-# Agile development 
+## Agile development 
+---
 An Agile approach to creating this app has been applied. GitHub's projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. 
 
 By using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. Due to time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
@@ -50,9 +52,9 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 16. As a site user i can reply to a comment so that i can respond.
 17. As a site user i can search for a post so that i can quickly find a post that i am looking.
 18. As a site admin, i can create draft posts so that i can finish writing them later.
-# Design
-
-## CRUD Functionality
+## Design
+---
+### CRUD Functionality
 * Create - Users can create, account, profile, post, comment, like. 
 * Read - Users can view post that other people have written and also their profile. 
 * Update - Users can update their profile, posted posts and likes. 
@@ -66,18 +68,18 @@ Google Fonts was used on deciding on the fonts for the website. "Zen dots with a
 
 ## Site structure
 
-### Pages
+## Pages
 User experience was one of the main driving factors in this project. A simple, clear and easy to navigate app was the desired outcome. To achieve this there is  a sticky nav bar with links at the top. In the form of a hamburger toggle button if using a small screen device in which all links will be listed vertically.
 
 The website consists of the following sections: 
-#### If not logged in 
+### If not logged in 
 When the user is not logged in they are able to read post on the home page and visit the authors profile page. Posts will be displayed in order by date of most recent.
 * Register, the user can register via a form. 
 * Login, the user can log in.
 * Categories, here the user can select a specific category to read. 
 * Contact page, here the user can contact carblog via a email.  
 * Post page, when a user select a post to read they are not able to like the post nor can they leave a comment.
-#### If logged in 
+### If logged in 
 When the user is logged in their name will appear in the navbar with a hello message. They are able to read post on the home page, posts will be displayed in order by date of most recent.
 * Add post, the user can create a post. 
 * Add Category, the user can add a category.
@@ -89,13 +91,15 @@ When the user is logged in their name will appear in the navbar with a hello mes
 * Post page, when a user select a post to read they are able to like or unlike the post and leave a comment.If the Post was created by the right user they are able to edit or delete the post. 
 
 ## Features 
-
+---
 The website consists of many features across the many pages. 
 
 ### Authentication
+
 Authentication is a feature of the website, users will have to be authenticated to create delete and edit posts. Also if they want to add a category.
 
 ### Contact 
+
 The Contact feature can be found in the navbar and allow both signed in users and not signed in to contact the site admin. 
 
 ### Add post
@@ -122,16 +126,17 @@ The login is located beside register and is avilable for the user to fill out if
 ### Categories 
 The catgories dropdown menu is located in the navbar and displays different categories. 
 
-# Future implementation
-
-## Future features 
+## Future implementation
+---
+### Future features 
 While using the AGILE design methodology against the time allocated to the project there are a number of features which would be great to implement in the future. These features are: number 13,14,15 in the user stories. 
 
-## Improvments 
+### Improvments 
 Although alot of effort was put into this project, due to time constraints there is still room for improvments. 
 
-# Valdiation Testing
-## HTML Validation 
+## Valdiation Testing
+---
+### HTML Validation 
 [W3C Validation](https://validator.w3.org/) was used to validate the html code used in the project. The method to validate i chose to be by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested.
 <details>
 <summary>Want to ruin the surprise?</summary>
@@ -172,9 +177,9 @@ Well, you asked for it!
 </details>
 <br>
 
-# Manual Testing 
+## Manual Testing 
 
-## Testing User Stories
+### Testing User Stories
 
 User Story:
 >1. As a site user, i can add blog posts so that i can interact with others.
@@ -376,10 +381,12 @@ Implementation of tests:
     * Gitpod was used to develop the website. 
 
 ## Resources Used 
+---
 * The Code Institute refernce material was used as a general refernce for things i had previously done during the course. 
 * All Other resources used are acknoleged where appropriate.
---- 
-# Deployment 
+
+## Deployment
+---
 The steps to deploy are as follows..
 
 * Go to Heroku and at the top click on the "new" button to create a new app.
@@ -407,7 +414,7 @@ The steps to use ElephantSQl are as follows..
 * From the instances section lcik on instance with the name that was just created. 
 * Get the databse URL from the instance deatils page and copy, this will be inserted in the Heroku Config vars. 
 
-# Credits
+## Credits
 Code from external sources were used as a basis and built on top of in this project, They are credited below:
 * The website has been built following [Codemy](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi).
 * The code for the contact form with email backend was taken from [Email backend](https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend).
