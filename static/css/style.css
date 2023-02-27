@@ -13,9 +13,14 @@ body {
 a {
     color: rgb(9, 9, 9);
     font-family: 'Zen Dots', cursive;;
+    margin: 10px;
     
 }
 
 h1 {
     color:rgb(255, 255, 255)
+}
+
+button {
+     margin: 10px;
 }
