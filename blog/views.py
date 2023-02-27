@@ -7,6 +7,7 @@ from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, BadHeaderError
 from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 # Main page with posts #}
@@ -50,10 +51,11 @@ class PostDetailView(DetailView):
 
 
 # Add a post
-class AddPost(CreateView):
+class AddPost(SuccessMessageMixin, CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_posts.html'
+    success_message = "You have successfully added a post"
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -63,7 +65,7 @@ class AddPost(CreateView):
 
 
 # Add a category
-class AddCategory(CreateView):
+class AddCategory(SuccessMessageMixin, CreateView):
     model = Category
     template_name = 'category.html'
     fields = '__all__'
@@ -83,7 +85,7 @@ class UpdatePost(UpdateView):
 
 
 # Delete the post
-class DeletePost(DeleteView):
+class DeletePost(SuccessMessageMixin, DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
@@ -131,7 +133,7 @@ def LikeView(request, pk):
 
 
 # Add comment
-class AddComment(CreateView):
+class AddComment(SuccessMessageMixin, CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
@@ -142,3 +144,4 @@ class AddComment(CreateView):
 
     def get_success_url(self):
         return reverse_lazy('post-detail', kwargs={'pk': self.kwargs['pk']})
+
