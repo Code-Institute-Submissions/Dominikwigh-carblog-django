@@ -3,25 +3,25 @@
 <!-- Profile page -->
 <div class="card bg-dark text-light">
       <h5 class="card-title">
-        {{ user.user.first_name }}
-        {{ user.user.last_name }}
+        {{ profile.user.first_name }}
+        {{ profile.user.last_name }}
     </h5>
     <br />
     <div class="small text-white">
-        {% if user.facebook %}
-        <a href="{{user.facebook }}">Facebook<i class="fa-brands fa-facebook"></i></a> | 
+        {% if profile.facebook %}
+        <a href="{{profile.facebook }}">Facebook<i class="fa-brands fa-facebook"></i></a> | 
         {% endif %}
 
-        {% if user.instagram%}
-        <a href="{{user.instagram }}">Instagram<i class="fa-brands fa-square-instagram"></i></a> | 
+        {% if profile.instagram%}
+        <a href="{{profile.instagram }}">Instagram<i class="fa-brands fa-square-instagram"></i></a> | 
         {% endif %}
 
-        {% if user.linkedin%}
-        <a href="{{ user.linkedin }}">linkedIn<i class="fa-brands fa-linkedin"></i></a>
+        {% if profile.linkedin%}
+        <a href="{{profile.linkedin }}">linkedIn<i class="fa-brands fa-linkedin"></i></a>
         {% endif %}
     </div>
         <p class="card-text">
-        {{ user.bio }}
+        {{ profile.bio }}
         </p>
     </div>
     <a href="{% url 'home' %}" 
