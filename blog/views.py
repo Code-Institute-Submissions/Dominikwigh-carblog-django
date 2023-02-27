@@ -69,6 +69,7 @@ class AddCategory(SuccessMessageMixin, CreateView):
     model = Category
     template_name = 'category.html'
     fields = '__all__'
+    success_message = "You have successfully added a category"
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -78,10 +79,11 @@ class AddCategory(SuccessMessageMixin, CreateView):
 
 
 # Update the post #
-class UpdatePost(UpdateView):
+class UpdatePost(SuccessMessageMixin, UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
+    success_message = "You have successfully updated the post"
 
 
 # Delete the post
