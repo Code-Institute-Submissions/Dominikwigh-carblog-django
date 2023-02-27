@@ -6,20 +6,23 @@ from .forms import EditProfileForm
 from .forms import SignupForm, ProfilePageForm
 from django.views.generic import DetailView, CreateView
 from blog.models import Profile
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 # Registration
-class UserRegisterView(generic.CreateView):
+class UserRegisterView(SuccessMessageMixin, generic.CreateView):
     form_class = SignupForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
+    success_message = "You have successfully registered and logged in"
 
 
 # Edit profile
-class UserEditView(generic.UpdateView):
+class UserEditView(SuccessMessageMixin, generic.UpdateView):
     form_class = EditProfileForm
     template_name = 'registration/edit_profile.html'
     success_url = reverse_lazy('home')
+    success_message = "You have successfully edited your profile"
 
     def get_object(self):
         return self.request.user
