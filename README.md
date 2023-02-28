@@ -389,6 +389,12 @@ Implementation of tests:
 
 ## All Tests Passed &check;
 --- 
+
+## Bugs
+* When trying to add a success message to the deleteview i stumbled on a error as it is not possible to have that message in a delete view. 
+---
+* My solutiuon was overriding the delete method method and use djangos built in messages framework. Using messages_success() to display a message. And then calling super().delete() to delete the object and return the response. 
+
 # Technologies 
 -- 
 * Python / Django 
