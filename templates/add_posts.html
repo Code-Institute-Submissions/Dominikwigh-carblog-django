@@ -2,22 +2,24 @@
 <!-- Add a blog post page -->
 <div class="text-light bg-dark">
 {% if user.is_authenticated %}
-<h2>Add A Blog Post</h2>
-<br/>
-<div class="form-group">
-    <form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button class="btn btn-light">Post</button>
-</div>
-</div>
-<script>
+    <h2>Add A Blog Post</h2>
+    <br>
+    <div class="form-group">
+        <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        </form>
+        <button class="btn btn-light">Post</button>
+        
+        </div>
+    <script>
     var name = "{{ user.id }}";
-    document.getElementById("user").value 
+        document.getElementById("user").value 
         = name;
-</script>
+    </script>
+    
 {% else %}
 You cannot make a post if you are not logged in!!
 {% endif %}
-
+</div>
 {% endblock %}

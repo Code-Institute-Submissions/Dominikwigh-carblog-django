@@ -46,7 +46,6 @@ class EditForm(forms.ModelForm):
 
 
 # Contact page with form
-
 class ContactForm(forms.Form):
     first_name = forms.CharField(max_length=50)
     last_name = forms.CharField(max_length=50)

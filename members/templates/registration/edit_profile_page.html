@@ -5,16 +5,18 @@
 {% if user.is_authenticated %}
 {% if user.id == profile.user.id %}
 <h2>Edit Profile Page...</h2>
-<br />
+<br>
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
+        </form>
         <button class="btn btn-light">Update</button>
 </div>
-</div>
+
 {% else %}
 You cannot edit a page if you are not the correct user!!
 {% endif %}
+</div>
 {% endif %}
 {% endblock %}

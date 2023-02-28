@@ -6,6 +6,7 @@ from blog.models import Profile
 
 # Edit profile form
 class EditProfileForm(UserChangeForm):
+    password = None
     email = forms.EmailField(widget=forms.EmailInput(attrs={
         'class': 'form-control'}))
     first_name = forms.CharField(max_length=120, widget=forms.TextInput(attrs={
@@ -16,16 +17,16 @@ class EditProfileForm(UserChangeForm):
         'class': 'form-control'}))
     last_login = forms.CharField(max_length=120, widget=forms.TextInput(attrs={
         'class': 'form-control'}))
-    is_staff = forms.CharField(max_length=120, widget=forms.CheckboxInput(
+    is_staff = forms.CharField(widget=forms.CheckboxInput(
         attrs={'class': 'form-check'}))
-    is_active = forms.CharField(max_length=120, widget=forms.CheckboxInput(
+    is_active = forms.CharField(widget=forms.CheckboxInput(
         attrs={'class': 'form-check'}))
-    is_superuser = forms.CharField(max_length=120, widget=forms.CheckboxInput(
+    is_superuser = forms.CharField(widget=forms.CheckboxInput(
         attrs={'class': 'form-check'}))
 
     class Meta:
         model = User
-        fields = ('username', 'first_name', 'last_name', 'email', 'password',
+        fields = ('username', 'first_name', 'last_name', 'email',
                   'last_login', 'is_staff', 'is_active', 'is_superuser')
 
 

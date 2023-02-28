@@ -6,7 +6,7 @@ from datetime import datetime, date
 
 # Category
 class Category(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
@@ -22,7 +22,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    category = models.CharField(max_length=200, default='default')
+    category = models.TextField(default='default')
     likes = models.ManyToManyField(User, related_name='blog_post')
 
     def total_likes(self):
