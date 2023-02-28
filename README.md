@@ -170,24 +170,14 @@ Although alot of effort was put into this project, due to time constraints there
 [Codebeautify](https://codebeautify.org/jsvalidate) Was used to validate the JavaScript code used. Thers i a small script used in the templates that has been intentionally placed there due to the small size of the script and being specific to that page. One error occured and to my knowledge i has to be like that.
 Error: unexpected "<". 
 
-![Css validation](documentation/Css%20validation.png)
-
 ## Python Validation
 [PEP8](https://pep8ci.herokuapp.com/#) 
-<details>
-<summary>Want to ruin the surprise?</summary>
-<br>
-Well, you asked for it!
-</details>
+
 
 ## LightHouse Validation
-[PEP8](https://pep8ci.herokuapp.com/#) was used to validate the performance of the app. 
-<details>
-<summary>Want to ruin the surprise?</summary>
-<br>
-Well, you asked for it!
-</details>
-<br>
+[PEP8](https://pep8ci.herokuapp.com/#) was used to validate the performance of the app. The websiyte recived high scores when checked through. 
+
+![Lighthouse testing](documentation/Lighthouse.png)
 
 ## Manual Testing 
 * Nav bar - When being at the site the navbar is displayed at the top and i am able to click on every link.
