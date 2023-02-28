@@ -3,12 +3,13 @@
 <!-- Main page with posts -->
 <hr>
 <div class="text-light bg-dark">
-<ul>
     <div class="col-md-8 offset-md-2">
         <h1>Blog Posts...</h1>
         <hr>
+<ul>
         {% for post in object_list %}
         <li>
+            
             <h2><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a></h2>
             <small>
                 {{ post.created_on }} |&nbsp;
@@ -19,7 +20,7 @@
         </li>
         
         {% endfor %}
-    </div>
 </ul>
+</div>
 </div>
 {% endblock %}

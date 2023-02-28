@@ -187,7 +187,8 @@ Although alot of effort was put into this project, due to time constraints there
 Error: unexpected "<". 
 
 ## Python Validation
-[PEP8](https://pep8ci.herokuapp.com/#) 
+[PEP8](https://pep8ci.herokuapp.com/#) Was used to validate the python code. No erros found.
+All pre generated code left untouched. 
 
 
 ## LightHouse Validation
