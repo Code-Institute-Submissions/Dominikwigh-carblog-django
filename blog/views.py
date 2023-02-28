@@ -55,7 +55,7 @@ class AddPost(SuccessMessageMixin, CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_posts.html'
-    success_message = "You have successfully added a post"
+    success_message = "You have added a post, check it out below!"
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -69,7 +69,7 @@ class AddCategory(SuccessMessageMixin, CreateView):
     model = Category
     template_name = 'category.html'
     fields = '__all__'
-    success_message = "You have successfully added a category"
+    success_message = "You have now added a category"
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -83,7 +83,7 @@ class UpdatePost(SuccessMessageMixin, UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
-    success_message = "You have successfully updated the post"
+    success_message = "You have now updated the post"
 
 
 # Delete the post
@@ -91,7 +91,7 @@ class DeletePost(SuccessMessageMixin, DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
-    success_message = "You have successfully deleted the post"
+    success_message = "You have now deleted the post, create a new!"
 
 
 # Contact form
@@ -140,12 +140,12 @@ class AddComment(SuccessMessageMixin, CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
-    success_message = "You have successfully added a comment"
-    
+    success_message = "You have added a comment"
+
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
         return super().form_valid(form)
 
     def get_success_url(self):
         return reverse_lazy('post-detail', kwargs={'pk': self.kwargs['pk']})
-        
+    

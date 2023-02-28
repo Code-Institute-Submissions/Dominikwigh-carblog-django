@@ -14,7 +14,7 @@ class UserRegisterView(SuccessMessageMixin, generic.CreateView):
     form_class = SignupForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
-    success_message = "You have successfully registered and logged in"
+    success_message = "You have registered and logged in"
 
 
 # Edit profile
@@ -22,7 +22,7 @@ class UserEditView(SuccessMessageMixin, generic.UpdateView):
     form_class = EditProfileForm
     template_name = 'registration/edit_profile.html'
     success_url = reverse_lazy('home')
-    success_message = "You have successfully edited your profile"
+    success_message = "You have edited your profile"
 
     def get_object(self):
         return self.request.user
@@ -47,7 +47,7 @@ class EditProfilePageView(SuccessMessageMixin, generic.UpdateView):
     template_name = 'registration/edit_profile_page.html'
     fields = ['bio', 'facebook', 'instagram', 'linkedin']
     success_url = reverse_lazy('home')
-    success_message = "You have successfully edited your profile"
+    success_message = "You have edited your profile"
 
 
 # Create a profile page
@@ -55,7 +55,7 @@ class CreateProfilePageView(SuccessMessageMixin, CreateView):
     model = Profile
     form_class = ProfilePageForm
     template_name = 'registration/create_user.html'
-    success_message = "You have successfully created your profile"
+    success_message = "You have created your profile"
 
     def form_valid(self, form):
         form.instance.user = self.request.user
