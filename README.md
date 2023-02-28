@@ -465,3 +465,7 @@ Code from external sources were used as a basis and built on top of in this proj
 [Am i Responsive](https://www.google.com) was used to check for responsivness.
 * Github template used in this project come from [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template).
 * Fonts were taken from [Google fonts](https://fonts.google.com/).
+
+## Acknowledgments
+
+* I Want to thank my mentor Rory Patrick for all the help of completing my milestone project 4. 
