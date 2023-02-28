@@ -105,6 +105,7 @@ This feature is the main page with posts with the latest created at the top. Thi
 ### Contact 
 The Contact feature can be found in the navbar and allow both signed in users and unsigned in to contact the site admin. 
 ![Contact page](documentation/Contact.png)
+
 ### Add post
 The add post feature can be found in the navbar when a user is registerd and logged in. And allows the user to make posts to the website. When a post is added the user is then redirected to the home page and gets a message displyed. 
 ![Add post page](documentation/Add%20Post.png)
@@ -113,8 +114,11 @@ The add post feature can be found in the navbar when a user is registerd and log
 ### Edit post / delete post 
 The edit and delete post feature can be found when the user is logged in and visits their post. When a post is edited or deleted the user gets a message displayed. 
 ![Edit profile page](documentation/Edit%20profile%20page.png)
+
 ![Updated profile message](documentation/update%20post%20message.png)
+
 ![Delete post page](documentation/deletepost.png)
+
 ![Deleted post message](documentation/deleted%20post%20message.png)
 
 ### Like / unlike button and comment section
@@ -129,12 +133,15 @@ The register feature is located in the navbar and is a form that the user has to
 ![Register page](documentation/Register.png)
 
 ![Register and log in message](documentation/register%20message.png)
+
 ### Login 
 The login is located beside register and is avilable for the user to fill out if they have registered. 
 ![Log in page](documentation/Log%20in.png)
+
 ### Categories 
-The catgories dropdown menu is located in the navbar and displays different categories. 
+The catgories dropdown menu is located in the navbar and displays different categories.
 ![Categorys page](documentation/Category.png)
+
 ### Add Category 
 The add category is located in the navbar and lets the user add a category if wanted. When a category is added the user is redirected home and a message is displayed.
 ![Add category page](documentation/Add%20Category.png)
@@ -153,27 +160,17 @@ Although alot of effort was put into this project, due to time constraints there
 ---
 ### HTML Validation 
 [W3C Validation](https://validator.w3.org/) was used to validate the html code used in the project. The method to validate i chose to be by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested.
-<details>
-<summary>Want to ruin the surprise?</summary>
-<br>
-Well, you asked for it!
-</details>
+
 
 ## Css Validation
 [W3C Validation](https://validator.w3.org/) was used to validate the css code used in the project. The method to validate i chose to be by Direct Input. To achieve this i copied all code from the style.css file. This code was then copied and pasted into the validator and tested.
-<details open>
-<summary>Want to ruin the surprise?</summary>
-<br>
-Well, you asked for it!
-</details>
+![Css validation](documentation/Css%20validation.png)
 
 ## JavaScript Validation 
-[JShint](https://jshint.com/) Was used to validate the JavaScript code used. Thers i a small script used in the templates that has been intentionally placed there due to the small size of the script and being specific to those pages.
-<details>
-<summary>Want to ruin the surprise?</summary>
-<br>
-Well, you asked for it!
-</details>
+[Codebeautify](https://codebeautify.org/jsvalidate) Was used to validate the JavaScript code used. Thers i a small script used in the templates that has been intentionally placed there due to the small size of the script and being specific to that page. One error occured and to my knowledge i has to be like that.
+Error: unexpected "<". 
+
+![Css validation](documentation/Css%20validation.png)
 
 ## Python Validation
 [PEP8](https://pep8ci.herokuapp.com/#) 
@@ -201,7 +198,8 @@ Well, you asked for it!
 * Categories - When selecting categories in the navbar i can see all categories on the page as a dropdown. And when selecting a category i am taken to a page with all posts with that category. 
 * Contact carblog - When selecting contact carblog i get a form to submit and when submitted a email is sent to the site owner. 
 * Register - When clicking on register in the navbar i am shown a form to submit. After submisson i am redirected to the log in page. 
-* Log in - When clicking on log in i have the option to eneter my username and password. And when correct i a m redirect to the home page. And shown a message. 
+* Log in - When clicking on log in i have the option to enter my username and password. And when correct i am redirected to the home page. And shown a message.
+* Authentication - When I am not logged in i cannot edit posts, delete post, create posts, add categorys, like post or comment on posts. Everything works as intended. 
 
 The small javascript code is used to assign a user to the post being created. It is hidden so no one can access it. And is found in the add post html file. 
 
