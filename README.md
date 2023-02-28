@@ -6,7 +6,7 @@ Developer: Dominik Wigh
 This is the fourth project for the Code Institute Diploma in Software Development.
 
 CarBlog is a webiste built in Django using Python, JavaScript, CSS/Bootstrap and HTML. 
-It enables users to create and share blog posts with people around the world. It is targeted towards people who like cars and want to have a read about them, and share their thoughts. Users have the ability to create posts, categorys and their own profile. They can link their personal accounts in their profile. The profile is also editable. They can also like posts and leave a comment. If wanted the user can contact Carblog via email.
+It enables users to create and share blog posts with people around the world. It is targeted towards people who like cars and want to have a read about them, and share their thoughts. Users have the ability to create posts, categorys and their own profile. They can link their personal social media accounts in their profile. The profile is also editable. They can also like posts and leave a comment. If wanted the user can contact Carblog via email.
 The site provides user authentication and a full CRUD functionality.
 
 ## Design
@@ -20,8 +20,8 @@ Selected post page: When a user sees a blog post that sound interestaing they ca
 ![Selected post](documentation/image0.jpeg)
 
 ### Database Schema
-Several models were reuquired tgo build the site. My custom model was The profile model. 
-I have choosen to create two apps. The members app contains of "all The authentication part". To keep it seperated. 
+Several models were reuquired to build the site. My custom model was The profile model. 
+I have choosen to create two apps. The members app contains of "all The authentication parts", To keep it seperated. 
 
 ![Database Schema](documentation/Database%20schema.png)
 
@@ -62,14 +62,15 @@ By using AGILE methodology in this project i was able to deliver a site which ha
 10. As a site user, i can have my own profile page so that i can provide my information.
 11. As a site user, i can edit my settings so that i can update my information in the future.
 12. As a site user i can log in or out of my account so that i can keep my account secure.
--13. As a Site user, i can approve or disapprove comments so that i can filter out comments.
--14. As a Site user, i can add a image to my post so that i have a image with my text.
--15. As a site user i can delete my account so that users wishing to close can do that.
--16. As a site user i can reply to a comment so that i can respond.
--17. As a site user i can search for a post so that i can quickly find a post that i am looking.
--18. As a site admin, i can create draft posts so that i can finish writing them later.
--19. As a owner of a comment i can edit my comment so that i can update my existing comment
--20. As a owner of a comment i can delete my comment so that i can control removal
+
+13. As a Site user, i can approve or disapprove comments so that i can filter out comments.
+14. As a Site user, i can add a image to my post so that i have a image with my text.
+15. As a site user i can delete my account so that users wishing to close can do that.
+16. As a site user i can reply to a comment so that i can respond.
+17. As a site user i can search for a post so that i can quickly find a post that i am looking.
+18. As a site admin, i can create draft posts so that i can finish writing them later.
+19. As a owner of a comment i can edit my comment so that i can update my existing comment
+20. As a owner of a comment i can delete my comment so that i can control removal
 ## Design
 ---
 ### CRUD Functionality
@@ -147,7 +148,7 @@ The comment section is only visible when a user is logged in, If there is no com
 ![Not logged in](documentation/Comment%3Alike%20not%20logged%20in.png)
 
 ### Register 
-The register feature is located in the navbar and is a form that the user has to fill out to be registered. When a user creates a account and loggs in a message is displayed. 
+The register feature is located in the navbar and is a form that the user has to fill out to be registered. When a user creates an account and loggs in, a message is displayed. 
 ![Register page](documentation/Register.png)
 
 ![Register and log in message](documentation/register%20message.png)
@@ -167,7 +168,7 @@ The add category is located in the navbar and lets the user add a category if wa
 ![Added category message](documentation/add%20category%20message.png)
 
 ### Profile 
-When clicking on the profile dropdown menu i have the options: 
+When clicking on the profile dropdown menu the user have the following options: 
 * Edit settings 
 ![Edit settings](documentation/edit%20settings.png)
 * Show profile page
@@ -177,7 +178,7 @@ When clicking on the profile dropdown menu i have the options:
 ## Future implementation
 ---
 ### Future features 
-While using the AGILE design methodology against the time allocated to the project there are a number of features which would be great to implement in the future. These features are: number 13,14,15,16,17,18,19,20 in the user stories. and can also be found in the projects tab on github in the future implementation section. 
+While using the AGILE design methodology against the time allocated to the project there are a number of features which would be great to implement in the future. These features are: number 13,14,15,16,17,18,19,20 in the user stories. And can also be found in the projects tab on github in the future implementation section. 
 
 ### Improvments 
 Although alot of effort was put into this project, due to time constraints there is still room for improvments. 
@@ -203,7 +204,7 @@ All pre generated code left untouched.
 
 
 ## LightHouse Validation
-[PEP8](https://pep8ci.herokuapp.com/#) was used to validate the performance of the app. The websiyte recived high scores when checked through. 
+[PEP8](https://pep8ci.herokuapp.com/#) was used to validate the performance of the app. The website recived high scores when checked through. 
 
 ![Lighthouse testing](documentation/Lighthouse.png)
 
@@ -212,7 +213,7 @@ All pre generated code left untouched.
 * Add post - when clikcing on add post i am shown a form that needs to be filled out and then i am redirected to the home page where my post is shown at the top. 
 * Add category - when clikcing on add category i am shown one form section where i need to fill out the category that i want to add after that i am redirected to the home page and i am shown a message that my category has been added. 
 * Log out - when being logged in i can click on log out and i am getting logged out and cant access any authenticated stuff. 
-* Profile - When clikcing on the profile dropdown menu in the navbar i can see Edit settings, Show profile page and Edit profile page. when clicking on edit settings i get a pre filled out form with my inforfmation. That i can update. When clikcing on show profile page i am taken to my profile where i have my name, bio and social media lins. When clicking on edit profile page i get a pre filled out form with my profile information. 
+* Profile - When clikcing on the profile dropdown menu in the navbar i can see Edit settings, Show profile page and Edit profile page. When clicking on edit settings i get a pre filled out form with my inforfmation, that i can update. When clicking on show profile page i am taken to my profile where i have my name, bio and social media links. When clicking on edit profile page i get a pre filled out form with my profile information. 
 * Categories - When selecting categories in the navbar i can see all categories on the page as a dropdown. And when selecting a category i am taken to a page with all posts with that category. 
 * Contact carblog - When selecting contact carblog i get a form to submit and when submitted a email is sent to the site owner. 
 * Register - When clicking on register in the navbar i am shown a form to submit. After submisson i am redirected to the log in page. 
@@ -314,7 +315,7 @@ User Story:
 Acceptance criteria: 
 * Given that i am logged in i can leave a like a post. 
 * Given that i dont have a account i cant like a post. 
-* I can Unlike post after i have liked it. 
+* I can unlike post after i have liked it. 
 
 Implementation of tests:
 * When opening a post to view the whole post i can then read the post and like button is shown beneath the text. Originillay blue after clicked it turns blue.
@@ -329,7 +330,7 @@ User Story:
 
 Acceptance criteria:
 * Given that i am a registered user of the website when i navigate to comments section i am able to leave a comment. 
-* Given that i am a registered user i can click on 'leave a comment' and it send me to a comment form to submit. 
+* Given that i am a registered user i can click on 'leave a comment' and it sends me to a comment form to submit. 
 
 Implementation of tests:
 * Provide easy access to comment section. 
@@ -359,7 +360,7 @@ User Story:
 > 10. As a site user, i can have my own profile page so that i can provide my information.
 
 Acceptance criteria:
-* Given that i am a unregistered user, when i am on the home page. Then i see a Register link in the navbar. When link is clicked it takes me to the register page where i have to fill out form to register. 
+* Given that i am a unregistered user, when i am on the home page. Then i see a register link in the navbar. When link is clicked it takes me to the register page where i have to fill out form to register. 
 * Given that i am a unregistered user, When i fill out the form the system creates me a account and i am redirected to the login page where i have to log in. 
 * Given that iam user i am able see a profile dropdown menu in the navbar, when clicked i can edit my settings and create a profile page. 
 * When profile the page is created a link is added to the dropdown menu for me to view my profile.  
@@ -401,9 +402,9 @@ Implementation of tests:
 --- 
 
 ## Bugs
-* When trying to add a success message to the deleteview i stumbled on a error as it is not possible to have that message in a delete view. 
+* When trying to add a success message to the deleteview i stumbled upon a error as it is not possible to have that message in a delete view from my understanding.
 ---
-* My solutiuon was overriding the delete method method and use djangos built in messages framework. Using messages_success() to display a message. And then calling super().delete() to delete the object and return the response. 
+* My solutiuon was overriding the delete method and use djangos built in messages framework. Using messages_success() to display a message. And then calling super().delete() to delete the object and return the response. 
 
 # Technologies 
 -- 
@@ -414,7 +415,7 @@ Implementation of tests:
 * Heroku PostgreSQL
     * Heroku PostgresSQL was used at the databse.
 * JavaScript
-    * JavaScript was 
+    * JavaScript was used to assign the user to the post created.
 * Bootstrap 4.6
     * Bootstrap was used for layout. 
 * Font Awesome
@@ -430,14 +431,15 @@ Implementation of tests:
 
 ## Resources Used 
 ---
-* The Code Institute refernce material was used as a general reference for things i had previously done during the course. 
+* The Code Institute reference material was used as a general reference for things i had previously done during the course. 
 * All Other resources used are acknowleged where appropriate.
 
 ## Deployment
 ---
 The steps to deploy are as follows..
+First of all set DEBUG to FALSE..
 
-* Go to Heroku and at the top click on the "new" button to create a new app.
+* Then g o to Heroku and at the top click on the "new" button to create a new app.
 * Enter a unique name and choose Europe as region and click create app.
 * Go to settings and select "Config vars".
 * Add a new "Config vars":
@@ -466,8 +468,8 @@ The steps to use ElephantSQl are as follows..
 Code from external sources were used as a basis and built on top of in this project, They are credited below:
 * The website has been built following [Codemy](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi).
 * The code for the contact form with email backend was taken from [Email backend](https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend).
-* Code Institute "I think before i blog" have been used as insperation. 
-* To deploy the site i have been using the videos in the "I think before i blog" part of the course.  
+* Code Institute "I think therfore i blog" have been used as insperation. 
+* To deploy the site i have been using the videos in the "I think therefore i blog" part of the course.  
 * Social media icons were sourced from [Font awesome](https://www.google.com).
 * [W3Schools](https://www.google.com) used to research differnet syntaxes.
 * Favicons used in this project came from [Icons8](https://icons8.com/icons/set/favicon-car) 
@@ -475,7 +477,7 @@ Code from external sources were used as a basis and built on top of in this proj
 [Am i Responsive](https://www.google.com) was used to check for responsivness.
 * Github template used in this project come from [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template).
 * Fonts were taken from [Google fonts](https://fonts.google.com/).
-
+* To set up emails to a site i used [Mailtrap](https://mailtrap.io/home).
 ## Acknowledgments
 
 * I Want to thank my mentor Rory Patrick for all the help of completing my milestone project 4. 
