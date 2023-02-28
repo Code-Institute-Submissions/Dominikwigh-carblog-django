@@ -4,7 +4,7 @@
 {% if category_posts %}
 <div class="text-light bg-dark">
 <h1>Category -- {{ cat }} </h1>
-<br />
+<br>
 <ul>
 {% for post in category_posts %}
         <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a> - 
@@ -14,8 +14,8 @@
             - <a href="{% url 'update_post' post.pk %}">Edit</a>
             - <a href="{% url 'delete_post' post.pk %}">Delete</a></li>
         {% endif %}
-        <br />
-        <br />
+        <br>
+        <br>
     {% endfor%}
 </ul>
 <a href="{% url 'home' %}" class="btn btn-light">Back

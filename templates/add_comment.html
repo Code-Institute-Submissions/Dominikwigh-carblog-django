@@ -4,16 +4,17 @@
 <div class="text-light bg-dark">
 {% if user.is_authenticated %}
 <h2>Add A Comment</h2>
-<br/>
+<br>
 <div class="form-group">
     <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button class="btn btn-light">Add</button>
+    </form>
 </div>
 {% else %}
 You have to have be logged in to comment on posts! 
-<br />
+<br>
 <a href="{% url 'login' %}">Click me to log in</a>
 {% endif %}
 </div>

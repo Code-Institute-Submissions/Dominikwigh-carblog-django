@@ -10,8 +10,8 @@
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        </form>
         <button class="btn btn-light">Update</button>
+    </form>
 </div>
 
 {% else %}

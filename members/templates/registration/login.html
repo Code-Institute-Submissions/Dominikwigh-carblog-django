@@ -3,12 +3,13 @@
 <!-- login page -->
 <div class="text-light bg-dark">
 <h2>Login</h2>
-<br/>
+<br>
 <div class="form-group">
     <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button class="btn btn-light">Login</button>
+    </form>
 </div>
 </div>
 

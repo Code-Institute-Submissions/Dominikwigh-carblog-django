@@ -8,9 +8,9 @@
         <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        </form>
-        <button class="btn btn-light">Post</button>
         
+        <button class="btn btn-light">Post</button>
+        </form>
         </div>
     <script>
     var name = "{{ user.id }}";

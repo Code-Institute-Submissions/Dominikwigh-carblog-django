@@ -2,19 +2,20 @@
 {% include 'messages.html' %}
 <!-- Delete posts page -->
 <div class="text-light bg-dark">
-<br />
+<br>
 {% if user.is_authenticated %}
 {% if user.id == post.author.id %}
 <h2>Delete Blog Post...</h2>
-<br />
+<br>
 <h4>This post will be deleted: {{ post.title }}</h4>
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
-        <br />
-        <br />
+        <br>
+        <br>
         <p>Are you sure?</p>
         <button class="btn btn-light">Delete</button>
+    </form>
         <a href="{% url 'home' %}" class="btn btn-light">Head to main page
         </a>
 </div>
