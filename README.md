@@ -129,7 +129,7 @@ The add post feature can be found in the navbar when a user is registerd and log
 ![Add post message](documentation/Add%20post%20message.png)
 ### Edit post / delete post 
 The edit and delete post feature can be found when the user is logged in and visits their post. When a post is edited or deleted the user gets a message displayed. 
-![Edit profile page](documentation/Edit%20profile%20page.png)
+![Edit post](documentation/edit%20blog%20post.png)
 
 ![Updated profile message](documentation/update%20post%20message.png)
 
@@ -164,6 +164,14 @@ The add category is located in the navbar and lets the user add a category if wa
 
 ![Added category message](documentation/add%20category%20message.png)
 
+### Profile 
+When clicking on the profile dropdown menu i have the options: 
+* Edit settings 
+![Edit settings](documentation/edit%20settings.png)
+* Show profile page
+![Show profile](documentation/Profile%20page.png)
+* Edit profile page 
+![Edit profile](documentation/Edit%20profile%20page.png)
 ## Future implementation
 ---
 ### Future features 
