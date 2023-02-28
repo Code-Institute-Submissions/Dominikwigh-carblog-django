@@ -9,6 +9,20 @@ CarBlog is a webiste built in Django using Python, JavaScript, CSS/Bootstrap and
 It enables users to create and share blog posts with people around the world. It is targeted towards people who like cars and want to have a read about them, and share their thoughts. Users have the ability to create posts, categorys and their own profile. They can link their personal accounts in their profile. The profile is also editable. They can also like posts and leave a comment. If wanted the user can contact Carblog via email.
 The site provides user authentication and a full CRUD functionality.
 
+## Design
+
+Home page: The home page provides the user with a clear understanding of the website. With posts being displayed with the post most recently created at the top. 
+
+
+Selected post page: When a user sees a blog post that sound interestaing they can open it by easily cliking on the heading as its a link and the read the full post and leave a comment and a like but only if authenticated. 
+
+
+
+### Database Schema
+Several models were reuquired tgo build the site. My custom model was The profile model. 
+I have choosen to create two apps. The members app contains of "all The authentication part". To keep it seperated. 
+
+
 ## Project Goals
 ---
 ### User Goals 
