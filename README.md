@@ -181,6 +181,17 @@ Well, you asked for it!
 <br>
 
 ## Manual Testing 
+* Nav bar - When being at the site the navbar is displayed at the top and i am able to click on every link.
+* Add post - when clikcing on add post i am shown a form that needs to be filled out and then i am redirected to the home page where my post is shown at the top. 
+* Add category - when clikcing on add category i am shown one form section where i need to fill out the category that i want to add after that i am redirected to the home page and i am shown a message that my category has been added. 
+* Log out - when being logged in i can click on log out and i am getting logged out and cant access any authenticated stuff. 
+* Profile - When clikcing on the profile dropdown menu in the navbar i can see Edit settings, Show profile page and Edit profile page. when clicking on edit settings i get a pre filled out form with my inforfmation. That i can update. When clikcing on show profile page i am taken to my profile where i have my name, bio and social media lins. When clicking on edit profile page i get a pre filled out form with my profile information. 
+* Categories - When selecting categories in the navbar i can see all categories on the page as a dropdown. And when selecting a category i am taken to a page with all posts with that category. 
+* Contact carblog - When selecting contact carblog i get a form to submit and when submitted a email is sent to the site owner. 
+* Register - When clicking on register in the navbar i am shown a form to submit. After submisson i am redirected to the log in page. 
+* Log in - When clicking on log in i have the option to eneter my username and password. And when correct i a m redirect to the home page. And shown a message. 
+
+The small javascript code is used to assign a user to the post being created. It is hidden so no one can access it. And is found in the add post html file. 
 
 ### Testing User Stories
 
