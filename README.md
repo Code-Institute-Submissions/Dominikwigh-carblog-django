@@ -13,15 +13,17 @@ The site provides user authentication and a full CRUD functionality.
 
 Home page: The home page provides the user with a clear understanding of the website. With posts being displayed with the post most recently created at the top. 
 
+![Home page](documentation/image1.jpeg)
 
 Selected post page: When a user sees a blog post that sound interestaing they can open it by easily cliking on the heading as its a link and the read the full post and leave a comment and a like but only if authenticated. 
 
-
+![Selected post](documentation/image0.jpeg)
 
 ### Database Schema
 Several models were reuquired tgo build the site. My custom model was The profile model. 
 I have choosen to create two apps. The members app contains of "all The authentication part". To keep it seperated. 
 
+![Database Schema](documentation/Database%20schema.png)
 
 ## Project Goals
 ---
