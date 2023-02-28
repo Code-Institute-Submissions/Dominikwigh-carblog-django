@@ -61,13 +61,15 @@ By using AGILE methodology in this project i was able to deliver a site which ha
 9. As a site user, i can Create, read, update and delete posts so that i can manage my content.
 10. As a site user, i can have my own profile page so that i can provide my information.
 11. As a site user, i can edit my settings so that i can update my information in the future.
-12. As a site user i can log in or out of my account so that i can kepp my account secure.
-13. As a Site user, i can approve or disapprove comments so that i can filter out comments.
-14. As a Site user, i can add a image to my post so that i have a image with my text.
-15. As a site user i can delete my account so that users wishing to close can do that.
-16. As a site user i can reply to a comment so that i can respond.
-17. As a site user i can search for a post so that i can quickly find a post that i am looking.
-18. As a site admin, i can create draft posts so that i can finish writing them later.
+12. As a site user i can log in or out of my account so that i can keep my account secure.
+-13. As a Site user, i can approve or disapprove comments so that i can filter out comments.
+-14. As a Site user, i can add a image to my post so that i have a image with my text.
+-15. As a site user i can delete my account so that users wishing to close can do that.
+-16. As a site user i can reply to a comment so that i can respond.
+-17. As a site user i can search for a post so that i can quickly find a post that i am looking.
+-18. As a site admin, i can create draft posts so that i can finish writing them later.
+-19. As a owner of a comment i can edit my comment so that i can update my existing comment
+-20. As a owner of a comment i can delete my comment so that i can control removal
 ## Design
 ---
 ### CRUD Functionality
@@ -175,7 +177,7 @@ When clicking on the profile dropdown menu i have the options:
 ## Future implementation
 ---
 ### Future features 
-While using the AGILE design methodology against the time allocated to the project there are a number of features which would be great to implement in the future. These features are: number 13,14,15 in the user stories. 
+While using the AGILE design methodology against the time allocated to the project there are a number of features which would be great to implement in the future. These features are: number 13,14,15,16,17,18,19,20 in the user stories. and can also be found in the projects tab on github in the future implementation section. 
 
 ### Improvments 
 Although alot of effort was put into this project, due to time constraints there is still room for improvments. 
