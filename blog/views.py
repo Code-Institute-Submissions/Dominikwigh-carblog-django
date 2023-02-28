@@ -91,7 +91,10 @@ class DeletePost(SuccessMessageMixin, DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
-    success_message = "You have now deleted the post, create a new!"
+    
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, 'Object deleted successfully.')
+        return super().delete(request, *args, **kwargs)
 
 
 # Contact form
