@@ -42,18 +42,20 @@ class ProfilePageView(DetailView):
 
 
 # Edit profile page
-class EditProfilePageView(generic.UpdateView):
+class EditProfilePageView(SuccessMessageMixin, generic.UpdateView):
     model = Profile
     template_name = 'registration/edit_profile_page.html'
     fields = ['bio', 'facebook', 'instagram', 'linkedin']
     success_url = reverse_lazy('home')
+    success_message = "You have successfully edited your profile"
 
 
 # Create a profile page
-class CreateProfilePageView(CreateView):
+class CreateProfilePageView(SuccessMessageMixin, CreateView):
     model = Profile
     form_class = ProfilePageForm
     template_name = 'registration/create_user.html'
+    success_message = "You have successfully created your profile"
 
     def form_valid(self, form):
         form.instance.user = self.request.user
