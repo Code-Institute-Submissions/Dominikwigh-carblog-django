@@ -6,8 +6,8 @@ Developer: Dominik Wigh
 This is the fourth project for the Code Institute Diploma in Software Development.
 
 CarBlog is a webiste built in Django using Python, JavaScript, CSS/Bootstrap and HTML. 
-It enables users to create and share blog posts with people around the world. It is targeted towards people who like cars and want to have a read about them, and share their thoughts. Users have the ability to create posts, categorys and their own profile. They can link their personal accounts in their profile. The profile is also editable.  They also can like posts and leave a comment. If wanted the user can contact Carblog via email.
-The site provides user authentication and a Full CRUD functionality.
+It enables users to create and share blog posts with people around the world. It is targeted towards people who like cars and want to have a read about them, and share their thoughts. Users have the ability to create posts, categorys and their own profile. They can link their personal accounts in their profile. The profile is also editable. They can also like posts and leave a comment. If wanted the user can contact Carblog via email.
+The site provides user authentication and a full CRUD functionality.
 
 ## Project Goals
 ---
@@ -19,7 +19,7 @@ The site provides user authentication and a Full CRUD functionality.
 
 ### Site Owner Goals
 * To provide a platform where users can add posts and share their thoughts.
-* To provide a enjoyable user experince where users want to come back and read, update and create posts. 
+* To provide a enjoyable user experience where users want to come back and read, update and create posts. 
 * To have a contact form where users can give feedback. 
 
 ## User Experience
@@ -30,7 +30,7 @@ The site provides user authentication and a Full CRUD functionality.
 ---
 An Agile approach to creating this app has been applied. GitHub's projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. 
 
-By using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. Due to time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
+By using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
 
 ## User stories
 
@@ -55,7 +55,7 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 ## Design
 ---
 ### CRUD Functionality
-* Create - Users can create, account, profile, post, comment, like. 
+* Create - Users can create posts, an account, a profile, add a comment, and like. 
 * Read - Users can view post that other people have written and also their profile. 
 * Update - Users can update their profile, posted posts and likes. 
 * Delete - Users can delete posts, comments and likes. 
@@ -64,7 +64,7 @@ By using AGILE methodology in this project I was able to deliver a site which ha
 The colour scheme used in this project was chosen with simplicity in mind. The colour scheme is used throughout all pages to ensure contrast readability and an overall good user experience.
 
 ## Fonts 
-Google Fonts was used on deciding on the fonts for the website. "Zen dots with a fallback of sans-serif" was the ideal for the website.
+Google Fonts was used on deciding on the fonts for the website. "Zen dots with a fallback of sans-serif" was the ideal font for the website.
 
 ## Site structure
 
@@ -118,7 +118,7 @@ The Like feature can be found under the post, but is only visible when a user is
 The comment section is only visible when a user is logged in, If there is no comment there will be a link to a page where the user can leave a comment. Otherwise there will be a link to login. 
 
 ### Register 
-The register feature is located in the navbar and is a form that the user has to fill out to be registerde.
+The register feature is located in the navbar and is a form that the user has to fill out to be registered.
 
 ### Login 
 The login is located beside register and is avilable for the user to fill out if they have registered. 
@@ -145,7 +145,7 @@ Well, you asked for it!
 </details>
 
 ## Css Validation
-[W3C Validation](https://validator.w3.org/) as used to validate the css code used in the project. The method to validate i chose to be by Direct Input. To achieve this i copied all code from the style.css file. This code was then copied and pasted into the validator and tested.
+[W3C Validation](https://validator.w3.org/) was used to validate the css code used in the project. The method to validate i chose to be by Direct Input. To achieve this i copied all code from the style.css file. This code was then copied and pasted into the validator and tested.
 <details open>
 <summary>Want to ruin the surprise?</summary>
 <br>
@@ -185,7 +185,7 @@ User Story:
 >1. As a site user, i can add blog posts so that i can interact with others.
 
 Acceptance criteria:
-* Given that i am a logge in user when i navigate to 'Add Post' in the navbar i have the option to create a blog post. 
+* Given that i am a logged in user when i navigate to 'Add Post' in the navbar i have the option to create a blog post. 
 * Given that i have created a blog post as a logged in user, then its available to other users to view. 
 
 Implementation of tests: 
@@ -382,8 +382,8 @@ Implementation of tests:
 
 ## Resources Used 
 ---
-* The Code Institute refernce material was used as a general refernce for things i had previously done during the course. 
-* All Other resources used are acknoleged where appropriate.
+* The Code Institute refernce material was used as a general reference for things i had previously done during the course. 
+* All Other resources used are acknowleged where appropriate.
 
 ## Deployment
 ---
@@ -423,7 +423,7 @@ Code from external sources were used as a basis and built on top of in this proj
 * Social media icons were sourced from [Font awesome](https://www.google.com).
 * [W3Schools](https://www.google.com) used to research differnet syntaxes.
 * Favicons used in this project came from [Icons8](https://icons8.com/icons/set/favicon-car) 
-* The background image comes from [Pexels](https://www.pexels.com/sv-se/sok/car/)
+* The background image comes from [Pexels](https://www.pexels.com/sv-se/sok/car/).
 [Am i Responsive](https://www.google.com) was used to check for responsivness.
-* Github template used in this project come from [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template)
-* Fonts were taken from [Google fonts](https://fonts.google.com/)
+* Github template used in this project come from [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template).
+* Fonts were taken from [Google fonts](https://fonts.google.com/).
