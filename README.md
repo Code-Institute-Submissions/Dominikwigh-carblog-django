@@ -103,10 +103,10 @@ Authentication is a feature of the website, users will have to be authenticated 
 The Contact feature can be found in the navbar and allow both signed in users and not signed in to contact the site admin. 
 
 ### Add post
-The add post feature can be found in the navbar when a user is registerd and logged in. And allows the user to make posts to the website. 
+The add post feature can be found in the navbar when a user is registerd and logged in. And allows the user to make posts to the website. When a post is added the user is then redirected to the home page and gets a message displyed. 
 
 ### Edit post / delete post 
-The edit and delete post feature can be found when the user is logged in and visits their post. 
+The edit and delete post feature can be found when the user is logged in and visits their post. When a post is edited or deleted the user gets a message displayed. 
 
 ### Blog posts
 This feature is the main page with posts with the latest created at the top. This page can be found when clicking the carblog title in the navbar. 
@@ -118,13 +118,16 @@ The Like feature can be found under the post, but is only visible when a user is
 The comment section is only visible when a user is logged in, If there is no comment there will be a link to a page where the user can leave a comment. Otherwise there will be a link to login. 
 
 ### Register 
-The register feature is located in the navbar and is a form that the user has to fill out to be registered.
+The register feature is located in the navbar and is a form that the user has to fill out to be registered. When a user creates a account and loggs in a message is displayed. 
 
 ### Login 
 The login is located beside register and is avilable for the user to fill out if they have registered. 
 
 ### Categories 
 The catgories dropdown menu is located in the navbar and displays different categories. 
+
+### Add Category 
+The add category is located in the navbar and lets the user add a category if wanted. When a category is added the user is redirected home and a message is displayed. 
 
 ## Future implementation
 ---
