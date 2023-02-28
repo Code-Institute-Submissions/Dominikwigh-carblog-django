@@ -177,6 +177,7 @@ Although alot of effort was put into this project, due to time constraints there
 ### HTML Validation 
 [W3C Validation](https://validator.w3.org/) was used to validate the html code used in the project. The method to validate i chose to be by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested.
 
+![Html validation](documentation/html%20validation.png)
 
 ## Css Validation
 [W3C Validation](https://validator.w3.org/) was used to validate the css code used in the project. The method to validate i chose to be by Direct Input. To achieve this i copied all code from the style.css file. This code was then copied and pasted into the validator and tested.
