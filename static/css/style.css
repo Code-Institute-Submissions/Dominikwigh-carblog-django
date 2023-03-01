@@ -1,20 +1,15 @@
-#bg{ 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 body {
     font-family: 'Zen Dots', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    background-image: url(/static/images/bgi.jpg);
+    background-repeat: no-repeat;
 }
 
 a {
     color: rgb(9, 9, 9);
     font-family: 'Zen Dots', cursive;;
     margin: 10px;
-    
 }
 
 h1 {
