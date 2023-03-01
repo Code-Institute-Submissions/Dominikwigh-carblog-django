@@ -3,12 +3,13 @@
 <!-- Register page -->
 <div class="text-light bg-dark">
 <h2>Register</h2>
-<br/>
+<br>
 <div class="form-group">
     <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button class="btn btn-light">Register</button>
+    </form>
 </div>
 
 </div>
