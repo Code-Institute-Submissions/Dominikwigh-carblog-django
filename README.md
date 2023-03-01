@@ -8,6 +8,7 @@ This is the fourth project for the Code Institute Diploma in Software Developmen
 CarBlog is a webiste built in Django using Python, JavaScript, CSS/Bootstrap and HTML. 
 It enables users to create and share blog posts with people around the world. It is targeted towards people who like cars and want to have a read about them, and share their thoughts. Users have the ability to create posts, categorys and their own profile. They can link their personal social media accounts in their profile. The profile is also editable. They can also like posts and leave a comment. If wanted the user can contact Carblog via email.
 The site provides user authentication and a full CRUD functionality.
+I have choosen to add two apps to sperate all authentication functionality from the page. For this part i also choose to have two template folders to keep better track of all files. 
 
 ## Design
 
@@ -26,7 +27,7 @@ I have choosen to create two apps. The members app contains of "all The authenti
 ![Database Schema](documentation/Database%20schema.png)
 
 ## Project Goals
----
+
 ### User Goals 
 * To be able to create blog posts. 
 * To be able to Comment and like on posts. 
@@ -39,11 +40,11 @@ I have choosen to create two apps. The members app contains of "all The authenti
 * To have a contact form where users can give feedback. 
 
 ## User Experience
----
+
 * Carblog is inteded to be a friendly community site where users can create and share their own thoughts on cars with others. Users will also be able to see other peoples posts and interact with them via comments or likes. 
 
 ## Agile development 
----
+
 An Agile approach to creating this app has been applied. GitHub's projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. 
 
 By using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
@@ -71,8 +72,8 @@ By using AGILE methodology in this project i was able to deliver a site which ha
 18. As a site admin, i can create draft posts so that i can finish writing them later.
 19. As a owner of a comment i can edit my comment so that i can update my existing comment
 20. As a owner of a comment i can delete my comment so that i can control removal
-## Design
----
+## Wireframes 
+
 ### CRUD Functionality
 * Create - Users can create posts, an account, a profile, add a comment, and like. 
 * Read - Users can view post that other people have written and also their profile. 
@@ -110,11 +111,9 @@ When the user is logged in their name will appear in the navbar with a hello mes
 * Post page, when a user select a post to read they are able to like or unlike the post and leave a comment.If the Post was created by the right user they are able to edit or delete the post. 
 
 ## Features 
----
 The website consists of many features across the many pages. 
 
 ### Authentication
-
 Authentication is a feature of the website, users will have to be authenticated to create delete and edit posts. Also if they want to add a category.
 
 ### Blog posts
@@ -126,10 +125,11 @@ The Contact feature can be found in the navbar and allow both signed in users an
 ![Contact page](documentation/Contact.png)
 
 ### Add post
-The add post feature can be found in the navbar when a user is registerd and logged in. And allows the user to make posts to the website. When a post is added the user is then redirected to the home page and gets a message displyed. 
+The add post feature can be found in the navbar when a user is registered and logged in. And allows the user to make posts to the website. When a post is added the user is then redirected to the home page and gets a message displyed. 
 ![Add post page](documentation/Add%20Post.png)
 
 ![Add post message](documentation/Add%20post%20message.png)
+
 ### Edit post / delete post 
 The edit and delete post feature can be found when the user is logged in and visits their post. When a post is edited or deleted the user gets a message displayed. 
 ![Edit post](documentation/edit%20blog%20post.png)
@@ -141,8 +141,8 @@ The edit and delete post feature can be found when the user is logged in and vis
 ![Deleted post message](documentation/deleted%20post%20message.png)
 
 ### Like / unlike button and comment section
-The Like feature can be found under the post, but is only visible when a user is logged in. Otherwise there is a link to login.
-The comment section is only visible when a user is logged in, If there is no comment there will be a link to a page where the user can leave a comment. Otherwise there will be a link to login. 
+* The like feature can be found under the post, but is only visible when a user is logged in. Otherwise there is a link to login.
+* The comment section is only visible when a user is logged in, if there is no comment there will be a link to a page where the user can leave a comment. Otherwise there will be a link to login. 
 ![logged in](documentation/Comment%3Alike%20logged%20in.png)
 
 ![Not logged in](documentation/Comment%3Alike%20not%20logged%20in.png)
@@ -400,14 +400,15 @@ Implementation of tests:
 
 ## All Tests Passed &check;
 --- 
-
 ## Bugs
+### Bug
 * When trying to add a success message to the deleteview i stumbled upon a error as it is not possible to have that message in a delete view from my understanding.
----
+
+### Solution
 * My solutiuon was overriding the delete method and use djangos built in messages framework. Using messages_success() to display a message. And then calling super().delete() to delete the object and return the response. 
 
 # Technologies 
--- 
+
 * Python / Django 
     * Django was used as the main python framework. 
 * Heroku 
@@ -423,23 +424,23 @@ Implementation of tests:
 * CSS
     * Custom CSS was written for some ares and used to escpae some bootstrap look.
 * HTML
-    * HTML was used as the base programminglanguage for the templates. 
+    * HTML was used as the base programming language for the templates. 
 * GitHub 
-    * GitHub was used to store the files for this project
+    * GitHub was used to store the files for this project.
 * Gitpod
     * Gitpod was used to develop the website. 
 
 ## Resources Used 
----
+
 * The Code Institute reference material was used as a general reference for things i had previously done during the course. 
 * All Other resources used are acknowleged where appropriate.
 
 ## Deployment
----
+
 The steps to deploy are as follows..
 First of all set DEBUG to FALSE..
 
-* Then g o to Heroku and at the top click on the "new" button to create a new app.
+* Then go to Heroku and at the top click on the "new" button to create a new app.
 * Enter a unique name and choose Europe as region and click create app.
 * Go to settings and select "Config vars".
 * Add a new "Config vars":
@@ -457,12 +458,12 @@ First of all set DEBUG to FALSE..
 
 The steps to use ElephantSQl are as follows..
 * Log in to ElephantSQL or create an account for free. 
-* Click on cretae a new instance
+* Click on create a new instance.
 * Set up your plan, give the 'plan' the desired name, select Tiny Turtle(free) plan and leave tags blank. 
-* Select the region, and select the nearest tou your location. 
+* Select the region, and select the nearest to your location. 
 * Click review, and if everything is ok, click on create instance down at the bottom. 
-* From the instances section lcik on instance with the name that was just created. 
-* Get the databse URL from the instance deatils page and copy, this will be inserted in the Heroku Config vars. 
+* From the instances section click on instance with the name that was just created. 
+* Get the databse URL from the instance deatils page and copy it, this will be inserted in the Heroku Config vars. 
 
 ## Credits
 Code from external sources were used as a basis and built on top of in this project, They are credited below:
@@ -480,4 +481,4 @@ Code from external sources were used as a basis and built on top of in this proj
 * To set up emails to a site i used [Mailtrap](https://mailtrap.io/home).
 ## Acknowledgments
 
-* I Want to thank my mentor Rory Patrick for all the help of completing my milestone project 4. 
+* I want to thank my mentor Rory Patrick for all the help of completing my milestone project 4. 
