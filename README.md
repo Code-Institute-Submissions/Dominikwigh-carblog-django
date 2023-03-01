@@ -149,7 +149,7 @@ The edit and delete post feature can be found when the user is logged in and vis
 
 ### Register 
 The register feature is located in the navbar and is a form that the user has to fill out to be registered. When a user creates an account and loggs in, a message is displayed. 
-![Register page](documentation/Register.png)
+![Register page](documentation/register.png)
 
 ![Register and log in message](documentation/register%20message.png)
 
