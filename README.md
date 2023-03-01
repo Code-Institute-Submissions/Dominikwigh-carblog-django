@@ -479,6 +479,7 @@ Code from external sources were used as a basis and built on top of in this proj
 * Github template used in this project come from [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template).
 * Fonts were taken from [Google fonts](https://fonts.google.com/).
 * To set up emails to a site i used [Mailtrap](https://mailtrap.io/home).
+* To store my static files i used [Cloudinary](https://cloudinary.com/)
 ## Acknowledgments
 
 * I want to thank my mentor Rory Patrick for all the help of completing my milestone project 4. 
