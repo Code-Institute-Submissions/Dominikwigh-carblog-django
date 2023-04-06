@@ -13,7 +13,11 @@
             <h2><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a></h2>
             <small>
                 {{ post.created_on }} |&nbsp;
+                {% if post.author.profile.id %}
                 By: <a href="{% url 'profile_page' post.author.profile.id %}">{{ post.author }}</a>
+                {% else %}
+                By: {{ post.author }}
+                {% endif %}
             </small>
             <br>
             <p>{{ post.body | slice:":300" }}...</p>

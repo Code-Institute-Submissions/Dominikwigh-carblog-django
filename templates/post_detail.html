@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
-{% block title %}}{{ post.slug }}{% endblock %}
+{% block title %}{{ post.slug }}{% endblock %}
 
 <!-- Page with posts-->
 {% block content %}
 {% include 'messages.html' %}
 <div class="text-light bg-dark">
 <h1>{{ post.title }}</h1>
-<small>By: <a href="{% url 'profile_page' post.author.profile.id %}">{{ post.author }}</a> - {{ post.created_on }}
+{% if post.author.profile.id %}
+<small>By: <a href="{% url 'profile_page' post.author.profile.id %}">{{ post.author }}</a> 
+    {% else %}
+    By: {{ post.author }}
+    {% endif %} - {{ post.created_on }}
     {% if user.is_authenticated %}
     {% if user.id == post.author.id %}
     <a href="{% url 'update_post' post.pk %}">Edit</a> -
